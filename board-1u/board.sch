@@ -4,13 +4,13 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
-Title ""
-Date ""
-Rev ""
-Comp ""
-Comment1 ""
-Comment2 ""
-Comment3 ""
+Title "Hydrogen"
+Date "2021-10-02"
+Rev "v2"
+Comp "Winterbloom"
+Comment1 "Alethea Flowers"
+Comment2 "CERN-OHL-P V2"
+Comment3 "hydrogen.wntr.dev"
 Comment4 ""
 $EndDescr
 $Comp
@@ -18,7 +18,7 @@ L winterbloom:Eurorack_Mono_Jack J2
 U 1 1 613CA4F2
 P 1025 1450
 F 0 "J2" H 993 1075 50  0000 C CNN
-F 1 "A" H 993 1166 50  0000 C CNN
+F 1 "IN A" H 993 1166 50  0000 C CNN
 F 2 "winterbloom:WQP-WQP518MA-skinny" H 1075 1100 50  0001 C CNN
 F 3 "http://www.qingpu-electronics.com/en/products/WQP-PJ398SM-362.html" H 1025 1400 50  0001 C CNN
 F 4 "WQP-WQP518MA" H 1025 1200 50  0001 C CNN "mpn"
@@ -33,7 +33,8 @@ F 0 "R1" V 2770 1500 50  0000 C CNN
 F 1 "100R" V 2861 1500 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 3015 1490 50  0001 C CNN
 F 3 "~" H 2975 1500 50  0001 C CNN
-F 4 "MCT06030C1001FP500" H 2975 1500 50  0001 C CNN "mpn"
+F 4 "R0816P-101-D" H 2975 1500 50  0001 C CNN "mpn"
+F 5 "thin film" H 2975 1500 50  0001 C CNN "Notes"
 	1    2975 1500
 	0    1    1    0   
 $EndComp
@@ -42,7 +43,7 @@ L winterbloom:Eurorack_Mono_Jack J3
 U 1 1 613CF30A
 P 3875 1450
 F 0 "J3" H 4055 1467 50  0000 L CNN
-F 1 "A1" H 4055 1376 50  0000 L CNN
+F 1 "OUT A1" H 4055 1376 50  0000 L CNN
 F 2 "winterbloom:WQP-WQP518MA-skinny" H 3925 1100 50  0001 C CNN
 F 3 "http://www.qingpu-electronics.com/en/products/WQP-PJ398SM-362.html" H 3875 1400 50  0001 C CNN
 F 4 "WQP-WQP518MA" H 3875 1200 50  0001 C CNN "mpn"
@@ -72,7 +73,7 @@ F 1 "OPA4991" H 2525 2651 50  0000 C CNN
 F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 2475 2475 50  0001 C CNN
 F 3 "https://www.ti.com/lit/ds/symlink/opa4991.pdf" H 2575 2575 50  0001 C CNN
 F 4 "OPA4991IPWR " H 2525 2375 50  0001 C CNN "mpn"
-F 5 "2.55" H 2525 2375 50  0001 C CNN "unit cost"
+F 5 "" H 2525 2375 50  0001 C CNN "unit cost"
 	2    2525 2375
 	1    0    0    -1  
 $EndComp
@@ -84,7 +85,8 @@ F 0 "R2" V 2770 2375 50  0000 C CNN
 F 1 "100R" V 2861 2375 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 3015 2365 50  0001 C CNN
 F 3 "~" H 2975 2375 50  0001 C CNN
-F 4 "MCT06030C1001FP500" H 2975 2375 50  0001 C CNN "mpn"
+F 4 "R0816P-101-D" H 2975 2375 50  0001 C CNN "mpn"
+F 5 "thin film" H 2975 2375 50  0001 C CNN "Notes"
 	1    2975 2375
 	0    1    1    0   
 $EndComp
@@ -95,7 +97,7 @@ L winterbloom:Eurorack_Mono_Jack J4
 U 1 1 613D1CF1
 P 3875 2325
 F 0 "J4" H 4055 2342 50  0000 L CNN
-F 1 "A2" H 4055 2251 50  0000 L CNN
+F 1 "OUT A2" H 4055 2251 50  0000 L CNN
 F 2 "winterbloom:WQP-WQP518MA-skinny" H 3925 1975 50  0001 C CNN
 F 3 "http://www.qingpu-electronics.com/en/products/WQP-PJ398SM-362.html" H 3875 2275 50  0001 C CNN
 F 4 "WQP-WQP518MA" H 3875 2075 50  0001 C CNN "mpn"
@@ -125,7 +127,7 @@ F 1 "OPA4991" H 2525 3501 50  0000 C CNN
 F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 2475 3325 50  0001 C CNN
 F 3 "https://www.ti.com/lit/ds/symlink/opa4991.pdf" H 2575 3425 50  0001 C CNN
 F 4 "OPA4991IPWR " H 2525 3225 50  0001 C CNN "mpn"
-F 5 "2.55" H 2525 3225 50  0001 C CNN "unit cost"
+F 5 "" H 2525 3225 50  0001 C CNN "unit cost"
 	1    2525 3225
 	1    0    0    -1  
 $EndComp
@@ -137,7 +139,8 @@ F 0 "R3" V 2770 3225 50  0000 C CNN
 F 1 "100R" V 2861 3225 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 3015 3215 50  0001 C CNN
 F 3 "~" H 2975 3225 50  0001 C CNN
-F 4 "MCT06030C1001FP500" H 2975 3225 50  0001 C CNN "mpn"
+F 4 "R0816P-101-D" H 2975 3225 50  0001 C CNN "mpn"
+F 5 "thin film" H 2975 3225 50  0001 C CNN "Notes"
 	1    2975 3225
 	0    1    1    0   
 $EndComp
@@ -148,7 +151,7 @@ L winterbloom:Eurorack_Mono_Jack J5
 U 1 1 613D3C53
 P 3875 3175
 F 0 "J5" H 4055 3192 50  0000 L CNN
-F 1 "A3" H 4055 3101 50  0000 L CNN
+F 1 "OUT A3" H 4055 3101 50  0000 L CNN
 F 2 "winterbloom:WQP-WQP518MA-skinny" H 3925 2825 50  0001 C CNN
 F 3 "http://www.qingpu-electronics.com/en/products/WQP-PJ398SM-362.html" H 3875 3125 50  0001 C CNN
 F 4 "WQP-WQP518MA" H 3875 2925 50  0001 C CNN "mpn"
@@ -177,7 +180,8 @@ F 0 "R4" V 2770 4125 50  0000 C CNN
 F 1 "100R" V 2861 4125 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 3015 4115 50  0001 C CNN
 F 3 "~" H 2975 4125 50  0001 C CNN
-F 4 "MCT06030C1001FP500" H 2975 4125 50  0001 C CNN "mpn"
+F 4 "R0816P-101-D" H 2975 4125 50  0001 C CNN "mpn"
+F 5 "thin film" H 2975 4125 50  0001 C CNN "Notes"
 	1    2975 4125
 	0    1    1    0   
 $EndComp
@@ -188,7 +192,7 @@ L winterbloom:Eurorack_Mono_Jack J6
 U 1 1 613D597B
 P 3875 4075
 F 0 "J6" H 4055 4092 50  0000 L CNN
-F 1 "A4" H 4055 4001 50  0000 L CNN
+F 1 "OUT A4" H 4055 4001 50  0000 L CNN
 F 2 "winterbloom:WQP-WQP518MA-skinny" H 3925 3725 50  0001 C CNN
 F 3 "http://www.qingpu-electronics.com/en/products/WQP-PJ398SM-362.html" H 3875 4025 50  0001 C CNN
 F 4 "WQP-WQP518MA" H 3875 3825 50  0001 C CNN "mpn"
@@ -211,7 +215,6 @@ $EndComp
 NoConn ~ 3675 4025
 Wire Wire Line
 	2225 1400 2050 1400
-NoConn ~ 1225 1500
 $Comp
 L power:GND #PWR01
 U 1 1 613D882B
@@ -249,7 +252,7 @@ F 1 "OPA4991" H 6775 1776 50  0000 C CNN
 F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 6725 1600 50  0001 C CNN
 F 3 "https://www.ti.com/lit/ds/symlink/opa4991.pdf" H 6825 1700 50  0001 C CNN
 F 4 "OPA4991IPWR " H 6775 1500 50  0001 C CNN "mpn"
-F 5 "2.55" H 6775 1500 50  0001 C CNN "unit cost"
+F 5 "" H 6775 1500 50  0001 C CNN "unit cost"
 	4    6775 1500
 	1    0    0    -1  
 $EndComp
@@ -258,7 +261,7 @@ L winterbloom:Eurorack_Mono_Jack J7
 U 1 1 613DBB80
 P 5275 1450
 F 0 "J7" H 5243 1075 50  0000 C CNN
-F 1 "B" H 5243 1166 50  0000 C CNN
+F 1 "IN B" H 5243 1166 50  0000 C CNN
 F 2 "winterbloom:WQP-WQP518MA-skinny" H 5325 1100 50  0001 C CNN
 F 3 "http://www.qingpu-electronics.com/en/products/WQP-PJ398SM-362.html" H 5275 1400 50  0001 C CNN
 F 4 "WQP-WQP518MA" H 5275 1200 50  0001 C CNN "mpn"
@@ -273,7 +276,8 @@ F 0 "R5" V 7020 1500 50  0000 C CNN
 F 1 "100R" V 7111 1500 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 7265 1490 50  0001 C CNN
 F 3 "~" H 7225 1500 50  0001 C CNN
-F 4 "MCT06030C1001FP500" H 7225 1500 50  0001 C CNN "mpn"
+F 4 "R0816P-101-D" H 7225 1500 50  0001 C CNN "mpn"
+F 5 "thin film" H 7225 1500 50  0001 C CNN "Notes"
 	1    7225 1500
 	0    1    1    0   
 $EndComp
@@ -284,7 +288,7 @@ L winterbloom:Eurorack_Mono_Jack J8
 U 1 1 613DBB98
 P 8125 1450
 F 0 "J8" H 8305 1467 50  0000 L CNN
-F 1 "B1" H 8305 1376 50  0000 L CNN
+F 1 "OUT B1" H 8305 1376 50  0000 L CNN
 F 2 "winterbloom:WQP-WQP518MA-skinny" H 8175 1100 50  0001 C CNN
 F 3 "http://www.qingpu-electronics.com/en/products/WQP-PJ398SM-362.html" H 8125 1400 50  0001 C CNN
 F 4 "WQP-WQP518MA" H 8125 1200 50  0001 C CNN "mpn"
@@ -314,7 +318,7 @@ F 1 "OPA4991" H 6775 2651 50  0000 C CNN
 F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 6725 2475 50  0001 C CNN
 F 3 "https://www.ti.com/lit/ds/symlink/opa4991.pdf" H 6825 2575 50  0001 C CNN
 F 4 "OPA4991IPWR " H 6775 2375 50  0001 C CNN "mpn"
-F 5 "2.55" H 6775 2375 50  0001 C CNN "unit cost"
+F 5 "" H 6775 2375 50  0001 C CNN "unit cost"
 	3    6775 2375
 	1    0    0    -1  
 $EndComp
@@ -326,7 +330,8 @@ F 0 "R6" V 7020 2375 50  0000 C CNN
 F 1 "100R" V 7111 2375 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 7265 2365 50  0001 C CNN
 F 3 "~" H 7225 2375 50  0001 C CNN
-F 4 "MCT06030C1001FP500" H 7225 2375 50  0001 C CNN "mpn"
+F 4 "R0816P-101-D" H 7225 2375 50  0001 C CNN "mpn"
+F 5 "thin film" H 7225 2375 50  0001 C CNN "Notes"
 	1    7225 2375
 	0    1    1    0   
 $EndComp
@@ -337,7 +342,7 @@ L winterbloom:Eurorack_Mono_Jack J9
 U 1 1 613DBBC7
 P 8125 2325
 F 0 "J9" H 8305 2342 50  0000 L CNN
-F 1 "B2" H 8305 2251 50  0000 L CNN
+F 1 "OUT B2" H 8305 2251 50  0000 L CNN
 F 2 "winterbloom:WQP-WQP518MA-skinny" H 8175 1975 50  0001 C CNN
 F 3 "http://www.qingpu-electronics.com/en/products/WQP-PJ398SM-362.html" H 8125 2275 50  0001 C CNN
 F 4 "WQP-WQP518MA" H 8125 2075 50  0001 C CNN "mpn"
@@ -367,7 +372,7 @@ F 1 "OPA4991" H 6775 3501 50  0000 C CNN
 F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 6725 3325 50  0001 C CNN
 F 3 "https://www.ti.com/lit/ds/symlink/opa4991.pdf" H 6825 3425 50  0001 C CNN
 F 4 "OPA4991IPWR " H 6775 3225 50  0001 C CNN "mpn"
-F 5 "2.55" H 6775 3225 50  0001 C CNN "unit cost"
+F 5 "" H 6775 3225 50  0001 C CNN "unit cost"
 	4    6775 3225
 	1    0    0    -1  
 $EndComp
@@ -379,7 +384,8 @@ F 0 "R7" V 7020 3225 50  0000 C CNN
 F 1 "100R" V 7111 3225 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 7265 3215 50  0001 C CNN
 F 3 "~" H 7225 3225 50  0001 C CNN
-F 4 "MCT06030C1001FP500" H 7225 3225 50  0001 C CNN "mpn"
+F 4 "R0816P-101-D" H 7225 3225 50  0001 C CNN "mpn"
+F 5 "thin film" H 7225 3225 50  0001 C CNN "Notes"
 	1    7225 3225
 	0    1    1    0   
 $EndComp
@@ -390,7 +396,7 @@ L winterbloom:Eurorack_Mono_Jack J10
 U 1 1 613DBBF6
 P 8125 3175
 F 0 "J10" H 8305 3192 50  0000 L CNN
-F 1 "B3" H 8305 3101 50  0000 L CNN
+F 1 "OUT B3" H 8305 3101 50  0000 L CNN
 F 2 "winterbloom:WQP-WQP518MA-skinny" H 8175 2825 50  0001 C CNN
 F 3 "http://www.qingpu-electronics.com/en/products/WQP-PJ398SM-362.html" H 8125 3125 50  0001 C CNN
 F 4 "WQP-WQP518MA" H 8125 2925 50  0001 C CNN "mpn"
@@ -420,7 +426,7 @@ F 1 "OPA4991" H 6775 4401 50  0000 C CNN
 F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 6725 4225 50  0001 C CNN
 F 3 "https://www.ti.com/lit/ds/symlink/opa4991.pdf" H 6825 4325 50  0001 C CNN
 F 4 "OPA4991IPWR " H 6775 4125 50  0001 C CNN "mpn"
-F 5 "2.55" H 6775 4125 50  0001 C CNN "unit cost"
+F 5 "" H 6775 4125 50  0001 C CNN "unit cost"
 	3    6775 4125
 	1    0    0    -1  
 $EndComp
@@ -432,7 +438,8 @@ F 0 "R8" V 7020 4125 50  0000 C CNN
 F 1 "100R" V 7111 4125 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 7265 4115 50  0001 C CNN
 F 3 "~" H 7225 4125 50  0001 C CNN
-F 4 "MCT06030C1001FP500" H 7225 4125 50  0001 C CNN "mpn"
+F 4 "R0816P-101-D" H 7225 4125 50  0001 C CNN "mpn"
+F 5 "thin film" H 7225 4125 50  0001 C CNN "Notes"
 	1    7225 4125
 	0    1    1    0   
 $EndComp
@@ -443,7 +450,7 @@ L winterbloom:Eurorack_Mono_Jack J11
 U 1 1 613DBC25
 P 8125 4075
 F 0 "J11" H 8305 4092 50  0000 L CNN
-F 1 "B4" H 8305 4001 50  0000 L CNN
+F 1 "OUT B4" H 8305 4001 50  0000 L CNN
 F 2 "winterbloom:WQP-WQP518MA-skinny" H 8175 3725 50  0001 C CNN
 F 3 "http://www.qingpu-electronics.com/en/products/WQP-PJ398SM-362.html" H 8125 4025 50  0001 C CNN
 F 4 "WQP-WQP518MA" H 8125 3825 50  0001 C CNN "mpn"
@@ -511,11 +518,12 @@ L Device:Ferrite_Bead_Small FB1
 U 1 1 613E2B86
 P 2450 6800
 F 0 "FB1" V 2325 6800 50  0000 C CNN
-F 1 "300mA" V 2575 6800 50  0000 C CNN
+F 1 "BEAD" V 2575 6800 50  0000 C CNN
 F 2 "Inductor_SMD:L_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 2380 6800 50  0001 C CNN
 F 3 "~" H 2450 6800 50  0001 C CNN
 F 4 "742792664" H 2450 6800 50  0001 C CNN "mpn"
-F 5 "0.13" H 2450 6800 50  0001 C CNN "unit cost"
+F 5 "" H 2450 6800 50  0001 C CNN "unit cost"
+F 6 "300mA" H 2450 6800 50  0001 C CNN "Notes"
 	1    2450 6800
 	0    1    1    0   
 $EndComp
@@ -524,11 +532,12 @@ L Diode:1N5819 D1
 U 1 1 613E42DD
 P 3025 6800
 F 0 "D1" H 3025 6700 50  0000 C CNN
-F 1 "1N5819" H 3025 6925 50  0000 C CNN
-F 2 "Diode_SMD:D_SOD-323_HandSoldering" H 3025 6625 50  0001 C CNN
+F 1 "BARRIER" H 3025 6925 50  0000 C CNN
+F 2 "winterbloom:DIODE_SOD-123_SOD-123F" H 3025 6625 50  0001 C CNN
 F 3 "http://www.vishay.com/docs/88525/1n5817.pdf" H 3025 6800 50  0001 C CNN
-F 4 "PMEG4010EGWX" H 3025 6800 50  0001 C CNN "mpn"
-F 5 "0.22" H 3025 6800 50  0001 C CNN "unit cost"
+F 4 "PMEG2005EGWX" H 3025 6800 50  0001 C CNN "mpn"
+F 5 "" H 3025 6800 50  0001 C CNN "unit cost"
+F 6 "Any PMEGxxxxEGW part, 500mA If" H 3025 6800 50  0001 C CNN "Notes"
 	1    3025 6800
 	1    0    0    -1  
 $EndComp
@@ -553,7 +562,7 @@ F 1 "OPA4991" H 9175 5725 50  0000 L CNN
 F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 9200 5525 50  0001 C CNN
 F 3 "https://www.ti.com/lit/ds/symlink/opa4991.pdf" H 9250 6075 50  0001 C CNN
 F 4 "OPA4991IPWR " H 9200 5425 50  0001 C CNN "mpn"
-F 5 "2.55" H 9200 5875 50  0001 C CNN "unit cost"
+F 5 "" H 9200 5875 50  0001 C CNN "unit cost"
 	5    9200 5875
 	1    0    0    -1  
 $EndComp
@@ -566,7 +575,7 @@ F 1 "OPA4991" H 10050 5725 50  0000 L CNN
 F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 10025 5975 50  0001 C CNN
 F 3 "https://www.ti.com/lit/ds/symlink/opa4991.pdf" H 10125 6075 50  0001 C CNN
 F 4 "OPA4991IPWR " H 10075 5875 50  0001 C CNN "mpn"
-F 5 "2.55" H 10075 5875 50  0001 C CNN "unit cost"
+F 5 "" H 10075 5875 50  0001 C CNN "unit cost"
 	5    10075 5875
 	1    0    0    -1  
 $EndComp
@@ -575,11 +584,12 @@ L Device:Ferrite_Bead_Small FB2
 U 1 1 613EF50A
 P 2450 7300
 F 0 "FB2" V 2325 7300 50  0000 C CNN
-F 1 "300mA" V 2575 7300 50  0000 C CNN
+F 1 "BEAD" V 2575 7300 50  0000 C CNN
 F 2 "Inductor_SMD:L_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 2380 7300 50  0001 C CNN
 F 3 "~" H 2450 7300 50  0001 C CNN
 F 4 "742792664" H 2450 7300 50  0001 C CNN "mpn"
-F 5 "0.13" H 2450 7300 50  0001 C CNN "unit cost"
+F 5 "" H 2450 7300 50  0001 C CNN "unit cost"
+F 6 "300mA" H 2450 7300 50  0001 C CNN "Notes"
 	1    2450 7300
 	0    1    1    0   
 $EndComp
@@ -588,11 +598,12 @@ L Diode:1N5819 D2
 U 1 1 613EF510
 P 3025 7300
 F 0 "D2" H 3025 7200 50  0000 C CNN
-F 1 "1N5819" H 3025 7425 50  0000 C CNN
-F 2 "Diode_SMD:D_SOD-323_HandSoldering" H 3025 7125 50  0001 C CNN
+F 1 "BARRIER" H 3025 7425 50  0000 C CNN
+F 2 "winterbloom:DIODE_SOD-123_SOD-123F" H 3025 7125 50  0001 C CNN
 F 3 "http://www.vishay.com/docs/88525/1n5817.pdf" H 3025 7300 50  0001 C CNN
-F 4 "PMEG4010EGWX" H 3025 7300 50  0001 C CNN "mpn"
-F 5 "0.22" H 3025 7300 50  0001 C CNN "unit cost"
+F 4 "PMEG2005EGWX" H 3025 7300 50  0001 C CNN "mpn"
+F 5 "" H 3025 7300 50  0001 C CNN "unit cost"
+F 6 "Any PMEGxxxxEGW part, 500mA If" H 3025 7300 50  0001 C CNN "Notes"
 	1    3025 7300
 	-1   0    0    1   
 $EndComp
@@ -733,7 +744,8 @@ F 1 "0.1uF" H 10550 5525 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 10525 5600 50  0001 C CNN
 F 3 "~" H 10525 5600 50  0001 C CNN
 F 4 "C1608X7R1E104K080AA" H 10525 5600 50  0001 C CNN "mpn"
-F 5 "0.03" H 10525 5600 50  0001 C CNN "unit cost"
+F 5 "" H 10525 5600 50  0001 C CNN "unit cost"
+F 6 "0603, 25V+, 10%, Bypass cap" H 10525 5600 50  0001 C CNN "Notes"
 	1    10525 5600
 	1    0    0    -1  
 $EndComp
@@ -768,7 +780,8 @@ F 1 "0.1uF" H 10900 5525 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 10875 5600 50  0001 C CNN
 F 3 "~" H 10875 5600 50  0001 C CNN
 F 4 "C1608X7R1E104K080AA" H 10875 5600 50  0001 C CNN "mpn"
-F 5 "0.03" H 10875 5600 50  0001 C CNN "unit cost"
+F 5 "" H 10875 5600 50  0001 C CNN "unit cost"
+F 6 "0603, 25V+, 10%, Bypass cap" H 10875 5600 50  0001 C CNN "Notes"
 	1    10875 5600
 	1    0    0    -1  
 $EndComp
@@ -803,7 +816,8 @@ F 1 "0.1uF" H 10550 6150 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 10525 6225 50  0001 C CNN
 F 3 "~" H 10525 6225 50  0001 C CNN
 F 4 "C1608X7R1E104K080AA" H 10525 6225 50  0001 C CNN "mpn"
-F 5 "0.03" H 10525 6225 50  0001 C CNN "unit cost"
+F 5 "" H 10525 6225 50  0001 C CNN "unit cost"
+F 6 "0603, 25V+, 10%, Bypass cap" H 10525 6225 50  0001 C CNN "Notes"
 	1    10525 6225
 	1    0    0    -1  
 $EndComp
@@ -827,7 +841,8 @@ F 1 "0.1uF" H 10900 6150 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 10875 6225 50  0001 C CNN
 F 3 "~" H 10875 6225 50  0001 C CNN
 F 4 "C1608X7R1E104K080AA" H 10875 6225 50  0001 C CNN "mpn"
-F 5 "0.03" H 10875 6225 50  0001 C CNN "unit cost"
+F 5 "" H 10875 6225 50  0001 C CNN "unit cost"
+F 6 "0603, 25V+, 10%, Bypass cap" H 10875 6225 50  0001 C CNN "Notes"
 	1    10875 6225
 	1    0    0    -1  
 $EndComp
@@ -873,7 +888,8 @@ F 1 "10uF" H 3991 7030 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 3900 7075 50  0001 C CNN
 F 3 "~" H 3900 7075 50  0001 C CNN
 F 4 "GRM21BR61E106KA73K" H 3900 7075 50  0001 C CNN "mpn"
-F 5 "0.17" H 3900 7075 50  0001 C CNN "unit cost"
+F 5 "" H 3900 7075 50  0001 C CNN "unit cost"
+F 6 "0805, 25V+, 10%, Bulk cap" H 3900 7075 50  0001 C CNN "Notes"
 	1    3900 7075
 	1    0    0    -1  
 $EndComp
@@ -930,7 +946,8 @@ F 1 "10uF" H 4200 7125 50  0000 R CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 4300 7050 50  0001 C CNN
 F 3 "~" H 4300 7050 50  0001 C CNN
 F 4 "GRM21BR61E106KA73K" H 4300 7050 50  0001 C CNN "mpn"
-F 5 "0.17" H 4300 7050 50  0001 C CNN "unit cost"
+F 5 "" H 4300 7050 50  0001 C CNN "unit cost"
+F 6 "0805, 25V+, 10%, Bulk cap" H 4300 7050 50  0001 C CNN "Notes"
 	1    4300 7050
 	-1   0    0    1   
 $EndComp
@@ -943,7 +960,7 @@ F 1 "OPA4991" H 2525 4401 50  0000 C CNN
 F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 2475 4225 50  0001 C CNN
 F 3 "https://www.ti.com/lit/ds/symlink/opa4991.pdf" H 2575 4325 50  0001 C CNN
 F 4 "OPA4991IPWR " H 2525 4125 50  0001 C CNN "mpn"
-F 5 "2.55" H 2525 4125 50  0001 C CNN "unit cost"
+F 5 "" H 2525 4125 50  0001 C CNN "unit cost"
 	2    2525 4125
 	1    0    0    -1  
 $EndComp
@@ -956,7 +973,7 @@ F 1 "LM358" H 2550 5176 50  0000 C CNN
 F 2 "Package_SO:VSSOP-8_3.0x3.0mm_P0.65mm" H 2550 4900 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/lm2904-n.pdf" H 2550 4900 50  0001 C CNN
 F 4 "LM358DGKR" H 2550 4900 50  0001 C CNN "mpn"
-F 5 "0.41" H 2550 4900 50  0001 C CNN "unit cost"
+F 5 "" H 2550 4900 50  0001 C CNN "unit cost"
 	2    2550 4900
 	1    0    0    -1  
 $EndComp
@@ -966,10 +983,11 @@ U 1 1 61616E13
 P 2975 5075
 F 0 "D4" V 2975 5150 50  0000 L CNN
 F 1 "NEG" V 3050 5150 50  0000 L CNN
-F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 2975 5075 50  0001 C CNN
+F 2 "winterbloom:LED_0805_Kingbright_APT2012" V 2975 5075 50  0001 C CNN
 F 3 "~" V 2975 5075 50  0001 C CNN
 F 4 "151033RS03000" H 2975 5075 50  0001 C CNN "mpn"
-F 5 "0.17" H 2975 5075 50  0001 C CNN "unit cost"
+F 5 "" H 2975 5075 50  0001 C CNN "unit cost"
+F 6 "APT2012SURCK" H 2975 5075 50  0001 C CNN "Notes"
 	1    2975 5075
 	0    1    1    0   
 $EndComp
@@ -979,10 +997,11 @@ U 1 1 61617230
 P 2850 5075
 F 0 "D3" V 2850 5250 50  0000 R CNN
 F 1 "POS" V 2775 5300 50  0000 R CNN
-F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 2850 5075 50  0001 C CNN
+F 2 "winterbloom:LED_0805_Kingbright_APT2012" V 2850 5075 50  0001 C CNN
 F 3 "~" V 2850 5075 50  0001 C CNN
 F 4 "151033BS03000" H 2850 5075 50  0001 C CNN "mpn"
-F 5 "0.24" H 2850 5075 50  0001 C CNN "unit cost"
+F 5 "" H 2850 5075 50  0001 C CNN "unit cost"
+F 6 "APT2012VBC/D" H 2850 5075 50  0001 C CNN "Notes"
 	1    2850 5075
 	0    -1   -1   0   
 $EndComp
@@ -996,11 +1015,12 @@ L Device:R_US R9
 U 1 1 6162E68F
 P 2250 5375
 F 0 "R9" H 2182 5329 50  0000 R CNN
-F 1 "270" H 2182 5420 50  0000 R CNN
+F 1 "270R" H 2182 5420 50  0000 R CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 2290 5365 50  0001 C CNN
 F 3 "~" H 2250 5375 50  0001 C CNN
-F 4 "ERA-3AED271V" H 2250 5375 50  0001 C CNN "mpn"
-F 5 "0.06" H 2250 5375 50  0001 C CNN "unit cost"
+F 4 "ERJ-3GEYJ271V" H 2250 5375 50  0001 C CNN "mpn"
+F 5 "" H 2250 5375 50  0001 C CNN "unit cost"
+F 6 "5%, thick film" H 2250 5375 50  0001 C CNN "Notes"
 	1    2250 5375
 	-1   0    0    1   
 $EndComp
@@ -1043,7 +1063,7 @@ F 1 "LM358" H 6800 5176 50  0000 C CNN
 F 2 "Package_SO:VSSOP-8_3.0x3.0mm_P0.65mm" H 6800 4900 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/lm2904-n.pdf" H 6800 4900 50  0001 C CNN
 F 4 "LM358DGKR" H 6800 4900 50  0001 C CNN "mpn"
-F 5 "0.41" H 6800 4900 50  0001 C CNN "unit cost"
+F 5 "" H 6800 4900 50  0001 C CNN "unit cost"
 	1    6800 4900
 	1    0    0    -1  
 $EndComp
@@ -1053,10 +1073,11 @@ U 1 1 6164DD34
 P 7225 5075
 F 0 "D6" V 7225 5150 50  0000 L CNN
 F 1 "NEG" V 7300 5150 50  0000 L CNN
-F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 7225 5075 50  0001 C CNN
+F 2 "winterbloom:LED_0805_Kingbright_APT2012" V 7225 5075 50  0001 C CNN
 F 3 "~" V 7225 5075 50  0001 C CNN
 F 4 "151033RS03000" H 7225 5075 50  0001 C CNN "mpn"
-F 5 "0.17" H 7225 5075 50  0001 C CNN "unit cost"
+F 5 "" H 7225 5075 50  0001 C CNN "unit cost"
+F 6 "APT2012SURCK" H 7225 5075 50  0001 C CNN "Notes"
 	1    7225 5075
 	0    1    1    0   
 $EndComp
@@ -1066,10 +1087,11 @@ U 1 1 6164DD3A
 P 7100 5075
 F 0 "D5" V 7100 5250 50  0000 R CNN
 F 1 "POS" V 7025 5300 50  0000 R CNN
-F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 7100 5075 50  0001 C CNN
+F 2 "winterbloom:LED_0805_Kingbright_APT2012" V 7100 5075 50  0001 C CNN
 F 3 "~" V 7100 5075 50  0001 C CNN
 F 4 "151033BS03000" H 7100 5075 50  0001 C CNN "mpn"
-F 5 "0.24" H 7100 5075 50  0001 C CNN "unit cost"
+F 5 "" H 7100 5075 50  0001 C CNN "unit cost"
+F 6 "APT2012VBC/D" H 7100 5075 50  0001 C CNN "Notes"
 	1    7100 5075
 	0    -1   -1   0   
 $EndComp
@@ -1080,11 +1102,12 @@ L Device:R_US R10
 U 1 1 6164DD42
 P 6500 5375
 F 0 "R10" H 6432 5329 50  0000 R CNN
-F 1 "270" H 6432 5420 50  0000 R CNN
+F 1 "270R" H 6432 5420 50  0000 R CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 6540 5365 50  0001 C CNN
 F 3 "~" H 6500 5375 50  0001 C CNN
-F 4 "ERA-3AED271V" H 6500 5375 50  0001 C CNN "mpn"
-F 5 "0.06" H 6500 5375 50  0001 C CNN "unit cost"
+F 4 "ERJ-3GEYJ271V" H 6500 5375 50  0001 C CNN "mpn"
+F 5 "" H 6500 5375 50  0001 C CNN "unit cost"
+F 6 "5%, thick film" H 6500 5375 50  0001 C CNN "Notes"
 	1    6500 5375
 	-1   0    0    1   
 $EndComp
@@ -1130,7 +1153,7 @@ F 1 "LM358" H 8508 5830 50  0000 L CNN
 F 2 "Package_SO:VSSOP-8_3.0x3.0mm_P0.65mm" H 8550 5875 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/lm2904-n.pdf" H 8550 5875 50  0001 C CNN
 F 4 "LM358DGKR" H 8550 5875 50  0001 C CNN "mpn"
-F 5 "0.41" H 8550 5875 50  0001 C CNN "unit cost"
+F 5 "" H 8550 5875 50  0001 C CNN "unit cost"
 	3    8550 5875
 	1    0    0    -1  
 $EndComp
@@ -1165,7 +1188,7 @@ F 1 "OPA4991" H 2525 1776 50  0000 C CNN
 F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 2475 1600 50  0001 C CNN
 F 3 "https://www.ti.com/lit/ds/symlink/opa4991.pdf" H 2575 1700 50  0001 C CNN
 F 4 "OPA4991IPWR " H 2525 1500 50  0001 C CNN "mpn"
-F 5 "2.55" H 2525 1500 50  0001 C CNN "unit cost"
+F 5 "" H 2525 1500 50  0001 C CNN "unit cost"
 	1    2525 1500
 	1    0    0    -1  
 $EndComp
@@ -1211,4 +1234,15 @@ Wire Wire Line
 Wire Wire Line
 	7075 4425 7075 4125
 Connection ~ 7075 4125
+$Comp
+L power:GND #PWR?
+U 1 1 6159879A
+P 1225 1500
+F 0 "#PWR?" H 1225 1250 50  0001 C CNN
+F 1 "GND" H 1230 1327 50  0000 C CNN
+F 2 "" H 1225 1500 50  0001 C CNN
+F 3 "" H 1225 1500 50  0001 C CNN
+	1    1225 1500
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
