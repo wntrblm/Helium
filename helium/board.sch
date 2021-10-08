@@ -5,7 +5,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "Helium"
-Date "2021-10-02"
+Date "2021-10-05"
 Rev "v2"
 Comp "Winterbloom"
 Comment1 "Alethea Flowers"
@@ -1915,17 +1915,6 @@ Connection ~ 10250 4825
 Connection ~ 10250 4375
 Wire Wire Line
 	10550 4375 10725 4375
-$Comp
-L power:GND #PWR0147
-U 1 1 615B5A1D
-P 10725 4475
-F 0 "#PWR0147" H 10725 4225 50  0001 C CNN
-F 1 "GND" H 10730 4302 50  0001 C CNN
-F 2 "" H 10725 4475 50  0001 C CNN
-F 3 "" H 10725 4475 50  0001 C CNN
-	1    10725 4475
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	8550 2525 8325 2525
 Wire Wire Line
@@ -2124,4 +2113,5 @@ Text Notes 2025 3175 0    50   ~ 0
 TODO: Lower Riso to <= 50 Ohm?
 Text Notes 9300 5400 0    50   ~ 0
 C11 creates a low-pass filter\n- Fc @ 132kHz w/ 12pF\n- Fc @ 88kHz w/ 18pF
+NoConn ~ 10725 4475
 $EndSCHEMATC
