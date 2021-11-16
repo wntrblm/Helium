@@ -11,14 +11,13 @@
 
 * [$89 MSRP](https://winterbloom.com/shop/helium)
 * 6 HP
-* +12v @ 10mA, -12v @ 10mA
+* +12v @ 35mA, -12v @ 35mA
 * 22mm deep
 * Four channels
 * The first three channels are 1-to-3 buffered multiples
 * The second and third channels are normalized to the channel above, allowing up to a 1-to-9 buferred multiple.
 * The fourth channel is a 3-to-1 precision adder.
 * [ModularGrid page](https://www.modulargrid.net/e/winterbloom-helium)
-
 
 ## Getting support and help
 
