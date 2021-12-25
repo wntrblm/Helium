@@ -23,6 +23,7 @@ F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 1625 625 50  0001 C CNN
 F 3 "https://www.ti.com/lit/ds/symlink/opa4197.pdf" H 1675 1175 50  0001 C CNN
 F 4 "OPA4991IPWR" H 1625 525 39  0001 C CNN "mpn"
 F 5 "" H 1625 975 50  0001 C CNN "unit cost"
+F 6 "1" H 1625 975 50  0001 C CNN "smd kit"
 	2    1625 975 
 	1    0    0    -1  
 $EndComp
@@ -48,6 +49,7 @@ F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 2115 965 50  00
 F 3 "~" H 2075 975 50  0001 C CNN
 F 4 "" H 2075 975 50  0001 C CNN "mpn"
 F 5 "thin film, highest possible wattage for size" H 2075 975 50  0001 C CNN "Notes"
+F 6 "1" H 2075 975 50  0001 C CNN "smd kit"
 	1    2075 975 
 	0    1    1    0   
 $EndComp
@@ -87,6 +89,7 @@ F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 1625 1500 50  0001 C CNN
 F 3 "https://www.ti.com/lit/ds/symlink/opa4197.pdf" H 1675 2050 50  0001 C CNN
 F 4 "OPA4991IPWR" H 1625 1400 39  0001 C CNN "mpn"
 F 5 "" H 1625 1850 50  0001 C CNN "unit cost"
+F 6 "1" H 1625 1850 50  0001 C CNN "smd kit"
 	4    1625 1850
 	1    0    0    -1  
 $EndComp
@@ -100,6 +103,7 @@ F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 2115 1840 50  0
 F 3 "~" H 2075 1850 50  0001 C CNN
 F 4 "" H 2075 1850 50  0001 C CNN "mpn"
 F 5 "thin film, highest possible wattage for size" H 2075 1850 50  0001 C CNN "Notes"
+F 6 "1" H 2075 1850 50  0001 C CNN "smd kit"
 	1    2075 1850
 	0    1    1    0   
 $EndComp
@@ -139,6 +143,7 @@ F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 1625 2350 50  0001 C CNN
 F 3 "https://www.ti.com/lit/ds/symlink/opa4197.pdf" H 1675 2900 50  0001 C CNN
 F 4 "OPA4991IPWR" H 1625 2250 39  0001 C CNN "mpn"
 F 5 "" H 1625 2700 50  0001 C CNN "unit cost"
+F 6 "1" H 1625 2700 50  0001 C CNN "smd kit"
 	3    1625 2700
 	1    0    0    -1  
 $EndComp
@@ -152,6 +157,7 @@ F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 2115 2690 50  0
 F 3 "~" H 2075 2700 50  0001 C CNN
 F 4 "" H 2075 2700 50  0001 C CNN "mpn"
 F 5 "thin film, highest possible wattage for size" H 2075 2700 50  0001 C CNN "Notes"
+F 6 "1" H 2075 2700 50  0001 C CNN "smd kit"
 	1    2075 2700
 	0    1    1    0   
 $EndComp
@@ -219,6 +225,7 @@ F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 4250 625 50  0001 C CNN
 F 3 "https://www.ti.com/lit/ds/symlink/opa4197.pdf" H 4300 1175 50  0001 C CNN
 F 4 "OPA4991IPWR" H 4250 525 39  0001 C CNN "mpn"
 F 5 "" H 4250 975 50  0001 C CNN "unit cost"
+F 6 "1" H 4250 975 50  0001 C CNN "smd kit"
 	2    4250 975 
 	1    0    0    -1  
 $EndComp
@@ -244,6 +251,7 @@ F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 4740 965 50  00
 F 3 "~" H 4700 975 50  0001 C CNN
 F 4 "" H 4700 975 50  0001 C CNN "mpn"
 F 5 "thin film, highest possible wattage for size" H 4700 975 50  0001 C CNN "Notes"
+F 6 "1" H 4700 975 50  0001 C CNN "smd kit"
 	1    4700 975 
 	0    1    1    0   
 $EndComp
@@ -283,6 +291,7 @@ F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 4250 1500 50  0001 C CNN
 F 3 "https://www.ti.com/lit/ds/symlink/opa4197.pdf" H 4300 2050 50  0001 C CNN
 F 4 "OPA4991IPWR" H 4250 1400 39  0001 C CNN "mpn"
 F 5 "" H 4250 1850 50  0001 C CNN "unit cost"
+F 6 "1" H 4250 1850 50  0001 C CNN "smd kit"
 	4    4250 1850
 	1    0    0    -1  
 $EndComp
@@ -296,6 +305,7 @@ F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 4740 1840 50  0
 F 3 "~" H 4700 1850 50  0001 C CNN
 F 4 "" H 4700 1850 50  0001 C CNN "mpn"
 F 5 "thin film, highest possible wattage for size" H 4700 1850 50  0001 C CNN "Notes"
+F 6 "1" H 4700 1850 50  0001 C CNN "smd kit"
 	1    4700 1850
 	0    1    1    0   
 $EndComp
@@ -335,6 +345,7 @@ F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 4250 2350 50  0001 C CNN
 F 3 "https://www.ti.com/lit/ds/symlink/opa4197.pdf" H 4300 2900 50  0001 C CNN
 F 4 "OPA4991IPWR" H 4250 2250 39  0001 C CNN "mpn"
 F 5 "" H 4250 2700 50  0001 C CNN "unit cost"
+F 6 "1" H 4250 2700 50  0001 C CNN "smd kit"
 	3    4250 2700
 	1    0    0    -1  
 $EndComp
@@ -348,6 +359,7 @@ F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 4740 2690 50  0
 F 3 "~" H 4700 2700 50  0001 C CNN
 F 4 "" H 4700 2700 50  0001 C CNN "mpn"
 F 5 "thin film, highest possible wattage for size" H 4700 2700 50  0001 C CNN "Notes"
+F 6 "1" H 4700 2700 50  0001 C CNN "smd kit"
 	1    4700 2700
 	0    1    1    0   
 $EndComp
@@ -427,6 +439,7 @@ F 3 "~" H 2450 6800 50  0001 C CNN
 F 4 "742792664" H 2450 6800 50  0001 C CNN "mpn"
 F 5 "" H 2450 6800 50  0001 C CNN "unit cost"
 F 6 "300mA" H 2450 6800 50  0001 C CNN "Notes"
+F 7 "1" H 2450 6800 50  0001 C CNN "smd kit"
 	1    2450 6800
 	0    1    1    0   
 $EndComp
@@ -441,6 +454,7 @@ F 3 "https://assets.nexperia.com/documents/brochure/Nexperia_document_brochure_S
 F 4 "PMEG2005EGWX" H 3025 6800 50  0001 C CNN "mpn"
 F 5 "" H 3025 6800 50  0001 C CNN "unit cost"
 F 6 "Any PMEGxxxxEGW part, 500mA If" H 3025 6800 50  0001 C CNN "Notes"
+F 7 "1" H 3025 6800 50  0001 C CNN "smd kit"
 	1    3025 6800
 	1    0    0    -1  
 $EndComp
@@ -454,6 +468,7 @@ F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 1350 5225 50  0001 C CNN
 F 3 "https://www.ti.com/lit/ds/symlink/opa4197.pdf" H 1400 5775 50  0001 C CNN
 F 4 "OPA4991IPWR" H 1350 5125 39  0001 C CNN "mpn"
 F 5 "" H 1350 5575 50  0001 C CNN "unit cost"
+F 6 "1" H 1350 5575 50  0001 C CNN "smd kit"
 	5    1350 5575
 	1    0    0    -1  
 $EndComp
@@ -467,6 +482,7 @@ F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 2350 5225 50  0001 C CNN
 F 3 "https://www.ti.com/lit/ds/symlink/opa4197.pdf" H 2400 5775 50  0001 C CNN
 F 4 "OPA4991IPWR" H 2350 5125 39  0001 C CNN "mpn"
 F 5 "" H 2350 5575 50  0001 C CNN "unit cost"
+F 6 "1" H 2350 5575 50  0001 C CNN "smd kit"
 	5    2350 5575
 	1    0    0    -1  
 $EndComp
@@ -481,6 +497,7 @@ F 3 "~" H 2450 7300 50  0001 C CNN
 F 4 "742792664" H 2450 7300 50  0001 C CNN "mpn"
 F 5 "" H 2450 7300 50  0001 C CNN "unit cost"
 F 6 "300mA" H 2450 7300 50  0001 C CNN "Notes"
+F 7 "1" H 2450 7300 50  0001 C CNN "smd kit"
 	1    2450 7300
 	0    1    1    0   
 $EndComp
@@ -495,6 +512,7 @@ F 3 "https://assets.nexperia.com/documents/brochure/Nexperia_document_brochure_S
 F 4 "PMEG2005EGWX" H 3025 7300 50  0001 C CNN "mpn"
 F 5 "" H 3025 7300 50  0001 C CNN "unit cost"
 F 6 "Any PMEGxxxxEGW part, 500mA If" H 3025 7300 50  0001 C CNN "Notes"
+F 7 "1" H 3025 7300 50  0001 C CNN "smd kit"
 	1    3025 7300
 	-1   0    0    1   
 $EndComp
@@ -637,6 +655,7 @@ F 3 "~" H 850 5300 50  0001 C CNN
 F 4 "C1608X7R1E104K080AA" H 850 5300 50  0001 C CNN "mpn"
 F 5 "" H 850 5300 50  0001 C CNN "unit cost"
 F 6 "0603, 25V+, 10%, Bypass cap" H 850 5300 50  0001 C CNN "Notes"
+F 7 "1" H 850 5300 50  0001 C CNN "smd kit"
 	1    850  5300
 	1    0    0    -1  
 $EndComp
@@ -673,6 +692,7 @@ F 3 "~" H 1850 5300 50  0001 C CNN
 F 4 "C1608X7R1E104K080AA" H 1850 5300 50  0001 C CNN "mpn"
 F 5 "" H 1850 5300 50  0001 C CNN "unit cost"
 F 6 "0603, 25V+, 10%, Bypass cap" H 1850 5300 50  0001 C CNN "Notes"
+F 7 "1" H 1850 5300 50  0001 C CNN "smd kit"
 	1    1850 5300
 	1    0    0    -1  
 $EndComp
@@ -709,6 +729,7 @@ F 3 "~" H 850 5925 50  0001 C CNN
 F 4 "C1608X7R1E104K080AA" H 850 5925 50  0001 C CNN "mpn"
 F 5 "" H 850 5925 50  0001 C CNN "unit cost"
 F 6 "0603, 25V+, 10%, Bypass cap" H 850 5925 50  0001 C CNN "Notes"
+F 7 "1" H 850 5925 50  0001 C CNN "smd kit"
 	1    850  5925
 	1    0    0    -1  
 $EndComp
@@ -734,6 +755,7 @@ F 3 "~" H 1850 5925 50  0001 C CNN
 F 4 "C1608X7R1E104K080AA" H 1850 5925 50  0001 C CNN "mpn"
 F 5 "" H 1850 5925 50  0001 C CNN "unit cost"
 F 6 "0603, 25V+, 10%, Bypass cap" H 1850 5925 50  0001 C CNN "Notes"
+F 7 "1" H 1850 5925 50  0001 C CNN "smd kit"
 	1    1850 5925
 	1    0    0    -1  
 $EndComp
@@ -781,6 +803,7 @@ F 3 "~" H 3900 7075 50  0001 C CNN
 F 4 "GRM21BR61E106KA73K" H 3900 7075 50  0001 C CNN "mpn"
 F 5 "" H 3900 7075 50  0001 C CNN "unit cost"
 F 6 "0805, 25V+, 10%, Bulk cap" H 3900 7075 50  0001 C CNN "Notes"
+F 7 "1" H 3900 7075 50  0001 C CNN "smd kit"
 	1    3900 7075
 	1    0    0    -1  
 $EndComp
@@ -839,6 +862,7 @@ F 3 "~" H 4300 7050 50  0001 C CNN
 F 4 "GRM21BR61E106KA73K" H 4300 7050 50  0001 C CNN "mpn"
 F 5 "" H 4300 7050 50  0001 C CNN "unit cost"
 F 6 "0805, 25V+, 10%, Bulk cap" H 4300 7050 50  0001 C CNN "Notes"
+F 7 "1" H 4300 7050 50  0001 C CNN "smd kit"
 	1    4300 7050
 	-1   0    0    1   
 $EndComp
@@ -852,6 +876,7 @@ F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 1625 3250 50  0001 C CNN
 F 3 "https://www.ti.com/lit/ds/symlink/opa4197.pdf" H 1675 3800 50  0001 C CNN
 F 4 "OPA4991IPWR" H 1625 3150 39  0001 C CNN "mpn"
 F 5 "" H 1625 3600 50  0001 C CNN "unit cost"
+F 6 "1" H 1625 3600 50  0001 C CNN "smd kit"
 	1    1625 3600
 	1    0    0    -1  
 $EndComp
@@ -865,6 +890,7 @@ F 2 "winterbloom:LED_0805_Kingbright_APT2012" V 2050 3775 50  0001 C CNN
 F 3 "~" V 2050 3775 50  0001 C CNN
 F 4 "APT2012SURCK" H 2050 3775 50  0001 C CNN "mpn"
 F 5 "" H 2050 3775 50  0001 C CNN "unit cost"
+F 6 "1" H 2050 3775 50  0001 C CNN "smd kit"
 	1    2050 3775
 	0    1    1    0   
 $EndComp
@@ -878,6 +904,7 @@ F 2 "winterbloom:LED_0805_Kingbright_APT2012" V 1925 3775 50  0001 C CNN
 F 3 "~" V 1925 3775 50  0001 C CNN
 F 4 "APT2012VBC/D" H 1925 3775 50  0001 C CNN "mpn"
 F 5 "" H 1925 3775 50  0001 C CNN "unit cost"
+F 6 "1" H 1925 3775 50  0001 C CNN "smd kit"
 	1    1925 3775
 	0    -1   -1   0   
 $EndComp
@@ -892,6 +919,7 @@ F 3 "~" H 1325 4075 50  0001 C CNN
 F 4 "ERJ-3GEYJ1R5V" H 1325 4075 50  0001 C CNN "mpn"
 F 5 "" H 1325 4075 50  0001 C CNN "unit cost"
 F 6 "5%, thick film" H 1325 4075 50  0001 C CNN "Notes"
+F 7 "1" H 1325 4075 50  0001 C CNN "smd kit"
 	1    1325 4075
 	-1   0    0    1   
 $EndComp
@@ -934,6 +962,7 @@ F 2 "winterbloom:LED_0805_Kingbright_APT2012" V 4675 3775 50  0001 C CNN
 F 3 "~" V 4675 3775 50  0001 C CNN
 F 4 "APT2012SURCK" H 4675 3775 50  0001 C CNN "mpn"
 F 5 "" H 4675 3775 50  0001 C CNN "unit cost"
+F 6 "1" H 4675 3775 50  0001 C CNN "smd kit"
 	1    4675 3775
 	0    1    1    0   
 $EndComp
@@ -947,6 +976,7 @@ F 2 "winterbloom:LED_0805_Kingbright_APT2012" V 4550 3775 50  0001 C CNN
 F 3 "~" V 4550 3775 50  0001 C CNN
 F 4 "APT2012VBC/D" H 4550 3775 50  0001 C CNN "mpn"
 F 5 "" H 4550 3775 50  0001 C CNN "unit cost"
+F 6 "1" H 4550 3775 50  0001 C CNN "smd kit"
 	1    4550 3775
 	0    -1   -1   0   
 $EndComp
@@ -961,6 +991,7 @@ F 3 "~" H 3950 4075 50  0001 C CNN
 F 4 "ERJ-3GEYJ1R5V" H 3950 4075 50  0001 C CNN "mpn"
 F 5 "" H 3950 4075 50  0001 C CNN "unit cost"
 F 6 "5%, thick film" H 3950 4075 50  0001 C CNN "Notes"
+F 7 "1" H 3950 4075 50  0001 C CNN "smd kit"
 	1    3950 4075
 	-1   0    0    1   
 $EndComp
@@ -1020,6 +1051,7 @@ F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 6875 625 50  0001 C CNN
 F 3 "https://www.ti.com/lit/ds/symlink/opa4197.pdf" H 6925 1175 50  0001 C CNN
 F 4 "OPA4991IPWR" H 6875 525 39  0001 C CNN "mpn"
 F 5 "" H 6875 975 50  0001 C CNN "unit cost"
+F 6 "1" H 6875 975 50  0001 C CNN "smd kit"
 	2    6875 975 
 	1    0    0    -1  
 $EndComp
@@ -1045,6 +1077,7 @@ F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 7365 965 50  00
 F 3 "~" H 7325 975 50  0001 C CNN
 F 4 "" H 7325 975 50  0001 C CNN "mpn"
 F 5 "thin film, highest possible wattage for size" H 7325 975 50  0001 C CNN "Notes"
+F 6 "1" H 7325 975 50  0001 C CNN "smd kit"
 	1    7325 975 
 	0    1    1    0   
 $EndComp
@@ -1084,6 +1117,7 @@ F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 6875 1500 50  0001 C CNN
 F 3 "https://www.ti.com/lit/ds/symlink/opa4197.pdf" H 6925 2050 50  0001 C CNN
 F 4 "OPA4991IPWR" H 6875 1400 39  0001 C CNN "mpn"
 F 5 "" H 6875 1850 50  0001 C CNN "unit cost"
+F 6 "1" H 6875 1850 50  0001 C CNN "smd kit"
 	4    6875 1850
 	1    0    0    -1  
 $EndComp
@@ -1097,6 +1131,7 @@ F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 7365 1840 50  0
 F 3 "~" H 7325 1850 50  0001 C CNN
 F 4 "" H 7325 1850 50  0001 C CNN "mpn"
 F 5 "thin film, highest possible wattage for size" H 7325 1850 50  0001 C CNN "Notes"
+F 6 "1" H 7325 1850 50  0001 C CNN "smd kit"
 	1    7325 1850
 	0    1    1    0   
 $EndComp
@@ -1136,6 +1171,7 @@ F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 6875 2350 50  0001 C CNN
 F 3 "https://www.ti.com/lit/ds/symlink/opa4197.pdf" H 6925 2900 50  0001 C CNN
 F 4 "OPA4991IPWR" H 6875 2250 39  0001 C CNN "mpn"
 F 5 "" H 6875 2700 50  0001 C CNN "unit cost"
+F 6 "1" H 6875 2700 50  0001 C CNN "smd kit"
 	3    6875 2700
 	1    0    0    -1  
 $EndComp
@@ -1149,6 +1185,7 @@ F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 7365 2690 50  0
 F 3 "~" H 7325 2700 50  0001 C CNN
 F 4 "" H 7325 2700 50  0001 C CNN "mpn"
 F 5 "thin film, highest possible wattage for size" H 7325 2700 50  0001 C CNN "Notes"
+F 6 "1" H 7325 2700 50  0001 C CNN "smd kit"
 	1    7325 2700
 	0    1    1    0   
 $EndComp
@@ -1211,6 +1248,7 @@ F 2 "winterbloom:LED_0805_Kingbright_APT2012" V 9275 2800 50  0001 C CNN
 F 3 "~" V 9275 2800 50  0001 C CNN
 F 4 "APT2012SURCK" H 9275 2800 50  0001 C CNN "mpn"
 F 5 "" H 9275 2800 50  0001 C CNN "unit cost"
+F 6 "1" H 9275 2800 50  0001 C CNN "smd kit"
 	1    9275 2800
 	0    1    1    0   
 $EndComp
@@ -1224,6 +1262,7 @@ F 2 "winterbloom:LED_0805_Kingbright_APT2012" V 9150 2800 50  0001 C CNN
 F 3 "~" V 9150 2800 50  0001 C CNN
 F 4 "APT2012VBC/D" H 9150 2800 50  0001 C CNN "mpn"
 F 5 "" H 9150 2800 50  0001 C CNN "unit cost"
+F 6 "1" H 9150 2800 50  0001 C CNN "smd kit"
 	1    9150 2800
 	0    -1   -1   0   
 $EndComp
@@ -1238,6 +1277,7 @@ F 3 "~" H 8550 3100 50  0001 C CNN
 F 4 "ERJ-3GEYJ1R5V" H 8550 3100 50  0001 C CNN "mpn"
 F 5 "" H 8550 3100 50  0001 C CNN "unit cost"
 F 6 "5%, thick film" H 8550 3100 50  0001 C CNN "Notes"
+F 7 "1" H 8550 3100 50  0001 C CNN "smd kit"
 	1    8550 3100
 	-1   0    0    1   
 $EndComp
@@ -1289,6 +1329,7 @@ F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 7450 4175 50  0001 C CNN
 F 3 "https://www.ti.com/lit/ds/symlink/opa4197.pdf" H 7500 4725 50  0001 C CNN
 F 4 "OPA4991IPWR" H 7450 4075 39  0001 C CNN "mpn"
 F 5 "" H 7450 4525 50  0001 C CNN "unit cost"
+F 6 "1" H 7450 4525 50  0001 C CNN "smd kit"
 	1    7450 4525
 	1    0    0    -1  
 $EndComp
@@ -1314,6 +1355,7 @@ F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 9540 4515 50  0
 F 3 "~" H 9500 4525 50  0001 C CNN
 F 4 "ERA-3AED102V" H 9500 4525 50  0001 C CNN "mpn"
 F 5 "1%, thin film" H 9500 4525 50  0001 C CNN "Notes"
+F 6 "1" H 9500 4525 50  0001 C CNN "smd kit"
 	1    9500 4525
 	0    1    1    0   
 $EndComp
@@ -1350,6 +1392,7 @@ F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 8850 4175 50  0001 C CNN
 F 3 "https://www.ti.com/lit/ds/symlink/opa4197.pdf" H 8900 4725 50  0001 C CNN
 F 4 "OPA4991IPWR" H 8850 4075 39  0001 C CNN "mpn"
 F 5 "" H 8850 4525 50  0001 C CNN "unit cost"
+F 6 "1" H 8850 4525 50  0001 C CNN "smd kit"
 	3    8850 4525
 	1    0    0    -1  
 $EndComp
@@ -1409,6 +1452,7 @@ F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 7950 5475 50  0001 C CNN
 F 3 "https://www.ti.com/lit/ds/symlink/opa4197.pdf" H 8000 6025 50  0001 C CNN
 F 4 "OPA4991IPWR" H 7950 5375 39  0001 C CNN "mpn"
 F 5 "" H 7950 5825 50  0001 C CNN "unit cost"
+F 6 "1" H 7950 5825 50  0001 C CNN "smd kit"
 	4    7950 5825
 	1    0    0    -1  
 $EndComp
@@ -1433,6 +1477,7 @@ F 2 "winterbloom:LED_0805_Kingbright_APT2012" V 8375 6000 50  0001 C CNN
 F 3 "~" V 8375 6000 50  0001 C CNN
 F 4 "APT2012SURCK" H 8375 6000 50  0001 C CNN "mpn"
 F 5 "" H 8375 6000 50  0001 C CNN "unit cost"
+F 6 "1" H 8375 6000 50  0001 C CNN "smd kit"
 	1    8375 6000
 	0    1    1    0   
 $EndComp
@@ -1446,6 +1491,7 @@ F 2 "winterbloom:LED_0805_Kingbright_APT2012" V 8250 6000 50  0001 C CNN
 F 3 "~" V 8250 6000 50  0001 C CNN
 F 4 "APT2012VBC/D" H 8250 6000 50  0001 C CNN "mpn"
 F 5 "" H 8250 6000 50  0001 C CNN "unit cost"
+F 6 "1" H 8250 6000 50  0001 C CNN "smd kit"
 	1    8250 6000
 	0    -1   -1   0   
 $EndComp
@@ -1460,6 +1506,7 @@ F 3 "~" H 7650 6300 50  0001 C CNN
 F 4 "ERJ-3GEYJ1R5V" H 7650 6300 50  0001 C CNN "mpn"
 F 5 "" H 7650 6300 50  0001 C CNN "unit cost"
 F 6 "5%, thick film" H 7650 6300 50  0001 C CNN "Notes"
+F 7 "1" H 7650 6300 50  0001 C CNN "smd kit"
 	1    7650 6300
 	-1   0    0    1   
 $EndComp
@@ -1502,6 +1549,7 @@ F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 4250 3250 50  0001 C CNN
 F 3 "https://www.ti.com/lit/ds/symlink/opa4197.pdf" H 4300 3800 50  0001 C CNN
 F 4 "OPA4991IPWR" H 4250 3150 39  0001 C CNN "mpn"
 F 5 "" H 4250 3600 50  0001 C CNN "unit cost"
+F 6 "1" H 4250 3600 50  0001 C CNN "smd kit"
 	1    4250 3600
 	1    0    0    -1  
 $EndComp
@@ -1518,6 +1566,7 @@ F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 8850 2275 50  0001 C CNN
 F 3 "https://www.ti.com/lit/ds/symlink/opa4197.pdf" H 8900 2825 50  0001 C CNN
 F 4 "OPA4991IPWR" H 8850 2175 39  0001 C CNN "mpn"
 F 5 "" H 8850 2625 50  0001 C CNN "unit cost"
+F 6 "1" H 8850 2625 50  0001 C CNN "smd kit"
 	1    8850 2625
 	1    0    0    -1  
 $EndComp
@@ -1535,6 +1584,7 @@ F 3 "~" H 2850 5300 50  0001 C CNN
 F 4 "C1608X7R1E104K080AA" H 2850 5300 50  0001 C CNN "mpn"
 F 5 "" H 2850 5300 50  0001 C CNN "unit cost"
 F 6 "0603, 25V+, 10%, Bypass cap" H 2850 5300 50  0001 C CNN "Notes"
+F 7 "1" H 2850 5300 50  0001 C CNN "smd kit"
 	1    2850 5300
 	1    0    0    -1  
 $EndComp
@@ -1571,6 +1621,7 @@ F 3 "~" H 3850 5300 50  0001 C CNN
 F 4 "C1608X7R1E104K080AA" H 3850 5300 50  0001 C CNN "mpn"
 F 5 "" H 3850 5300 50  0001 C CNN "unit cost"
 F 6 "0603, 25V+, 10%, Bypass cap" H 3850 5300 50  0001 C CNN "Notes"
+F 7 "1" H 3850 5300 50  0001 C CNN "smd kit"
 	1    3850 5300
 	1    0    0    -1  
 $EndComp
@@ -1607,6 +1658,7 @@ F 3 "~" H 2850 5925 50  0001 C CNN
 F 4 "C1608X7R1E104K080AA" H 2850 5925 50  0001 C CNN "mpn"
 F 5 "" H 2850 5925 50  0001 C CNN "unit cost"
 F 6 "0603, 25V+, 10%, Bypass cap" H 2850 5925 50  0001 C CNN "Notes"
+F 7 "1" H 2850 5925 50  0001 C CNN "smd kit"
 	1    2850 5925
 	1    0    0    -1  
 $EndComp
@@ -1632,6 +1684,7 @@ F 3 "~" H 3850 5925 50  0001 C CNN
 F 4 "C1608X7R1E104K080AA" H 3850 5925 50  0001 C CNN "mpn"
 F 5 "" H 3850 5925 50  0001 C CNN "unit cost"
 F 6 "0603, 25V+, 10%, Bypass cap" H 3850 5925 50  0001 C CNN "Notes"
+F 7 "1" H 3850 5925 50  0001 C CNN "smd kit"
 	1    3850 5925
 	1    0    0    -1  
 $EndComp
@@ -1678,6 +1731,7 @@ F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 3375 5225 50  0001 C CNN
 F 3 "https://www.ti.com/lit/ds/symlink/opa4197.pdf" H 3425 5775 50  0001 C CNN
 F 4 "OPA4991IPWR" H 3375 5125 39  0001 C CNN "mpn"
 F 5 "" H 3375 5575 50  0001 C CNN "unit cost"
+F 6 "1" H 3375 5575 50  0001 C CNN "smd kit"
 	5    3375 5575
 	1    0    0    -1  
 $EndComp
@@ -1691,6 +1745,7 @@ F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 4375 5225 50  0001 C CNN
 F 3 "https://www.ti.com/lit/ds/symlink/opa4197.pdf" H 4425 5775 50  0001 C CNN
 F 4 "OPA4991IPWR" H 4375 5125 39  0001 C CNN "mpn"
 F 5 "" H 4375 5575 50  0001 C CNN "unit cost"
+F 6 "1" H 4375 5575 50  0001 C CNN "smd kit"
 	5    4375 5575
 	1    0    0    -1  
 $EndComp
@@ -1768,6 +1823,7 @@ F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 6890 4615 50  0
 F 3 "~" H 6850 4625 50  0001 C CNN
 F 4 "ERA-3VRW1003V" H 6850 4625 50  0001 C CNN "mpn"
 F 5 "0.05%, thin film" H 6850 4625 50  0001 C CNN "Notes"
+F 6 "1" H 6850 4625 50  0001 C CNN "smd kit"
 	1    6850 4625
 	0    1    1    0   
 $EndComp
@@ -1783,6 +1839,7 @@ F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 6890 5490 50  0
 F 3 "~" H 6850 5500 50  0001 C CNN
 F 4 "ERA-3VRW1003V" H 6850 5500 50  0001 C CNN "mpn"
 F 5 "0.05%, thin film" H 6850 5500 50  0001 C CNN "Notes"
+F 6 "1" H 6850 5500 50  0001 C CNN "smd kit"
 	1    6850 5500
 	0    1    1    0   
 $EndComp
@@ -1796,6 +1853,7 @@ F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 6890 6340 50  0
 F 3 "~" H 6850 6350 50  0001 C CNN
 F 4 "ERA-3VRW1003V" H 6850 6350 50  0001 C CNN "mpn"
 F 5 "0.05%, thin film" H 6850 6350 50  0001 C CNN "Notes"
+F 6 "1" H 6850 6350 50  0001 C CNN "smd kit"
 	1    6850 6350
 	0    1    1    0   
 $EndComp
@@ -1838,6 +1896,7 @@ F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 7665 4890 50  0
 F 3 "~" H 7625 4900 50  0001 C CNN
 F 4 "ERA-3VRW1003V" H 7625 4900 50  0001 C CNN "mpn"
 F 5 "0.05%, thin film" H 7625 4900 50  0001 C CNN "Notes"
+F 6 "1" H 7625 4900 50  0001 C CNN "smd kit"
 	1    7625 4900
 	0    1    1    0   
 $EndComp
@@ -1871,6 +1930,7 @@ F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 8265 4615 50  0
 F 3 "~" H 8225 4625 50  0001 C CNN
 F 4 "ERA-3VRW1003V" H 8225 4625 50  0001 C CNN "mpn"
 F 5 "0.05%, thin film" H 8225 4625 50  0001 C CNN "Notes"
+F 6 "1" H 8225 4625 50  0001 C CNN "smd kit"
 	1    8225 4625
 	0    1    1    0   
 $EndComp
@@ -1884,6 +1944,7 @@ F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 8990 4965 50  0
 F 3 "~" H 8950 4975 50  0001 C CNN
 F 4 "ERA-3VRW1003V" H 8950 4975 50  0001 C CNN "mpn"
 F 5 "0.05%, thin film" H 8950 4975 50  0001 C CNN "Notes"
+F 6 "1" H 8950 4975 50  0001 C CNN "smd kit"
 	1    8950 4975
 	0    1    1    0   
 $EndComp
@@ -1931,6 +1992,7 @@ F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 8950 5150 50  
 F 3 "~" H 8950 5150 50  0001 C CNN
 F 4 "0603, 25V+, 10%, Low-pass filter cap" H 8950 5150 50  0001 C CNN "Notes"
 F 5 "C0603C120K5HACTU" H 8950 5150 50  0001 C CNN "mpn"
+F 6 "1" H 8950 5150 50  0001 C CNN "smd kit"
 	1    8950 5150
 	0    -1   -1   0   
 $EndComp
@@ -1956,6 +2018,7 @@ F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 9550 5725 50  0001 C CNN
 F 3 "https://www.ti.com/lit/ds/symlink/opa4197.pdf" H 9600 6275 50  0001 C CNN
 F 4 "OPA4991IPWR" H 9550 5625 39  0001 C CNN "mpn"
 F 5 "" H 9550 6075 50  0001 C CNN "unit cost"
+F 6 "1" H 9550 6075 50  0001 C CNN "smd kit"
 	2    9550 6075
 	1    0    0    -1  
 $EndComp
