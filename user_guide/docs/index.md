@@ -1,8 +1,5 @@
 # Helium User Guide
 
-!!! Note
-    This guide isn't quite finished yet! We're working hard on finishing it up so check back soon!
-
 [Hydrogen](https://winterbloom.com/shop/helium) is a precision, three channel, 1-to-3 buffered multiple and a 3-to-1 precision adder.
 
 [TOC]
@@ -13,10 +10,9 @@
 * 6 HP
 * +12v @ 35mA, -12v @ 35mA
 * 22mm deep
-* Four channels
-* The first three channels are 1-to-3 buffered multiples
-* The second and third channels are normalized to the channel above, allowing up to a 1-to-9 buferred multiple.
-* The fourth channel is a 3-to-1 precision adder.
+* Three 1-to-3 chainable buffered multiples
+* One 3-to-1 precision adder
+* Low offset, low drift, low noise operational amplifiers used throughout, and the precision adder uses thin film resistors with 0.05% tolerance.
 * [ModularGrid page](https://www.modulargrid.net/e/winterbloom-helium)
 
 ## Getting support and help
@@ -36,18 +32,37 @@ To install this into your Eurorack setup:
 1. Screw the module to your rack's rails.
 
 
-## Inputs and outputs
+## Using the buffered multiples
 
-We're working on it. :)
+Helium has three independent buffered multiples that each have three outputs. These are also called *unity gain buffers*.
+
+![Illustration of using Helium's three channels independently](/images/three-channel.png){: .dark-invert}
+
+Each channel's input is on the top left and the three buffered outputs follow on the right and below. The LEDs for each channel will glow blue for positive signals, red for negative signals, and purple for audio signals.
+
+Additionally, the inputs for channel two and three are chained so if nothing is connected to the input then the input of the preceding channel is used. This allows you to use Helium to buffer a single signal to up to nine outputs.
+
+![Illustration of using Helium as a single channel, nine output buffer](/images/one-channel.png){: .dark-invert}
+
+
+## Using the precision adder
+
+Helium has a precision adder with three inputs and one output. It sums the three inputs into a single output and works equally well for CV and audio signals. Precision adders are also called *unity gain mixers*.
+
+![Illustration of using Helium as a precision adder](/images/adder.png)
+
+The inputs are the top two and bottom left jacks (shown in teal, purple, and red) while the output is the bottom right jack (shown in yellow). Unconnected inputs do not affect the output. Just like with the buffered multiple channels, The LED in the middle will glow blue for positive signals, red for negative signals, and purple for audio signals (it's shown in yellow above for illustrative purposes).
+
+That's pretty much it! ✨
 
 
 ## Open source hardware & software
 
 Helium is completely open source and hacking is encouraged.
 
-* The [hardware designs](https://github.com/wntrblm/Helium/tree/main/hardware) is available under the permissive [CERN-OHL-P v2](https://cern-ohl.web.cern.ch/) and is designed using [KiCAD](https://kicad.org/) which is free and open-source. You can open the hardware files using KiCAD or you can [check out a PDF of the schematic](https://github.com/wntrblm/Helium/tree/main/hardware/board/board.pdf).
+The [hardware designs](https://github.com/wntrblm/Helium/tree/main/hardware) is available under the permissive [CERN-OHL-P v2](https://cern-ohl.web.cern.ch/) and is designed using [KiCAD](https://kicad.org/) which is free and open-source. You can open the hardware files using KiCAD or you can [check out a PDF of the schematic](https://github.com/wntrblm/Helium/tree/main/hardware/board/board.pdf).
 
-![Open Source Hardware Association mark](images/oshw.svg){class=oshw} Helium is [certified open source hardware](TODO)
+<!-- ![Open Source Hardware Association mark](images/oshw.svg){class=oshw} Helium is [certified open source hardware](TODO) -->
 
 
 ## Warranty, disclaimers, and limits
