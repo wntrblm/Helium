@@ -1,6 +1,6 @@
 # Helium User Guide
 
-[Hydrogen](https://winterbloom.com/shop/helium) is a precision, three channel, 1-to-3 buffered multiple and a 3-to-1 precision adder.
+[Helium](https://winterbloom.com/shop/helium) is a precision, three channel, 1-to-3 buffered multiple and a 3-to-1 precision adder.
 
 [TOC]
 
