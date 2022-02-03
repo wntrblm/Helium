@@ -189,38 +189,39 @@ def measure_adder():
     return section
 
 
-report = reportcard.Report(
-    name="Helium",
-)
+if __name__ == "__main__":
+    report = reportcard.Report(
+        name="Helium",
+    )
 
-channel_a_result = measure_channel(
-    "A", Voltage.IN_A, Mux.IN_A, [Mux.OUT_A1, Mux.OUT_A2, Mux.OUT_A3]
-)
-report.sections.append(channel_a_result)
+    channel_a_result = measure_channel(
+        "A", Voltage.IN_A, Mux.IN_A, [Mux.OUT_A1, Mux.OUT_A2, Mux.OUT_A3]
+    )
+    report.sections.append(channel_a_result)
 
-channel_b_result = measure_channel(
-    "B", Voltage.IN_A, Mux.IN_A, [Mux.OUT_A1, Mux.OUT_A2, Mux.OUT_A3]
-)
-report.sections.append(channel_b_result)
+    channel_b_result = measure_channel(
+        "B", Voltage.IN_A, Mux.IN_A, [Mux.OUT_A1, Mux.OUT_A2, Mux.OUT_A3]
+    )
+    report.sections.append(channel_b_result)
 
-channel_c_result = measure_channel(
-    "C", Voltage.IN_C, Mux.IN_C, [Mux.OUT_C1, Mux.OUT_C2, Mux.OUT_C3]
-)
-report.sections.append(channel_c_result)
+    channel_c_result = measure_channel(
+        "C", Voltage.IN_C, Mux.IN_C, [Mux.OUT_C1, Mux.OUT_C2, Mux.OUT_C3]
+    )
+    report.sections.append(channel_c_result)
 
-adder_result = measure_adder()
-report.sections.append(adder_result)
+    adder_result = measure_adder()
+    report.sections.append(adder_result)
 
-print(report)
-report.save()
-reportcard.render_html(report)
+    print(report)
+    report.save()
+    reportcard.render_html(report)
 
-if report.succeeded:
-    h.success()
-    print("PASSED")
-else:
-    h.fail()
-    print("FAILED")
+    if report.succeeded:
+        h.success()
+        print("PASSED")
+    else:
+        h.fail()
+        print("FAILED")
 
-if report.succeeded:
-    thermalprinter.print_me_maybe(reportcard.render_image(report))
+    if report.succeeded:
+        thermalprinter.print_me_maybe(reportcard.render_image(report))
