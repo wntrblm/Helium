@@ -62,7 +62,7 @@ Helium is completely open source and hacking is encouraged.
 
 The [hardware designs](https://github.com/wntrblm/Helium/tree/main/hardware) is available under the permissive [CERN-OHL-P v2](https://cern-ohl.web.cern.ch/) and is designed using [KiCAD](https://kicad.org/) which is free and open-source. You can open the hardware files using KiCAD or you can [check out a PDF of the schematic](https://github.com/wntrblm/Helium/tree/main/hardware/board/board.pdf).
 
-<!-- ![Open Source Hardware Association mark](images/oshw.svg){class=oshw} Helium is [certified open source hardware](TODO) -->
+![Open Source Hardware Association mark](images/oshw.svg){class=oshw} Helium is [certified open source hardware](https://certification.oshwa.org/us002071.html)
 
 
 ## Warranty, disclaimers, and limits
