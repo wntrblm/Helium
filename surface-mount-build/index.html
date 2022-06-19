@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+	 
+
+	<link rel="shortcut icon" sizes="192x192" href="/icon.png" />
+	<link rel="apple-touch-icon" sizes="192x192" href="/icon.png" />
+
+	<title>Surface mount build guide -
+			Winterbloom Helium User Guide
+	</title>
+
+	<!-- Bulma CSS framework -->
+	<link href="../styles/bulma.min.css" rel="stylesheet" />
+
+	<!-- Custom styles for this template -->
+	<link href="../styles/theme.css" rel="stylesheet" />
+
+	<!-- Syntax highlighting css -->
+	<link href="../styles/pygments.css" rel="stylesheet" />
+</head>
+
+<body>
+	<header class="header">
+		<nav class="navbar" role="navigation" aria-label="main navigation">
+			<div class="container is-max-desktop">
+				<div class="navbar-brand">
+					<a class="navbar-item" href=".." title="Home">
+						<img src="../winterbloom-logo.png" alt="Winterbloom logo" height="28">
+					</a>
+
+					<a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbar_menu">
+						<span aria-hidden="true"></span>
+						<span aria-hidden="true"></span>
+						<span aria-hidden="true"></span>
+					</a>
+				</div>
+
+				<div class="navbar-menu" id="navbar_menu">
+					<div class="navbar-end">
+						
+						
+							
+								<a class="navbar-item " href="..">User Guide</a>
+							
+						
+							
+								<div class="navbar-item has-dropdown is-hoverable is-subactive">
+									<a class="navbar-link is-arrowless">Kit Build Instructions</a>
+									<div class="navbar-dropdown">
+											<a class="navbar-item " href="../build/">Through hole</a>
+										
+											<a class="navbar-item is-active" href="./">Surface mount</a>
+										
+									</div>
+								</div>
+							
+						
+						
+					</div>
+				</div>
+			</div>
+		</nav>
+	</header>
+
+	<section class="section">
+		<div class="container is-max-desktop">
+			<article class="content"><h1 id="helium-surface-mount-build-guide">Helium surface mount build guide<a class="headerlink" href="#helium-surface-mount-build-guide" referrerpolicy="origin" title="Permanent link">#</a></h1>
+<p>Welcome to the <strong>surface mount kit</strong> build guide for Helium. We hope you have a great time putting this module together and a wonderful time using it.</p>
+<p>Please read <strong>all instructions thoroughly before starting</strong>. If you have questions or run into trouble please reach out to us on <a href="https://discord.gg/UpfqghQ" referrerpolicy="origin" rel="noopener" target="_blank">discord</a> or drop us an email at <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#115;&#117;&#112;&#112;&#111;&#114;&#116;&#64;&#119;&#105;&#110;&#116;&#101;&#114;&#98;&#108;&#111;&#111;&#109;&#46;&#99;&#111;&#109;" referrerpolicy="origin">&#115;&#117;&#112;&#112;&#111;&#114;&#116;&#64;&#119;&#105;&#110;&#116;&#101;&#114;&#98;&#108;&#111;&#111;&#109;&#46;&#99;&#111;&#109;</a></p>
+<p>Surface mount kits are <strong>expert level</strong> kits. You will have to solder <a href="https://en.wikipedia.org/wiki/File:SMT_sizes,_based_on_original_by_Zureks.svg" referrerpolicy="origin" rel="noopener" target="_blank">0603</a> and <a href="https://en.wikipedia.org/wiki/Thin_shrink_small_outline_package" referrerpolicy="origin" rel="noopener" target="_blank">TSSOP-16</a> components. Helium is a good kit for folks wanting to get started with surface mount assembly, but you should take great care not to damage the board or components. We recommend watching tutorials on how to drag solder (such as <a href="https://www.youtube.com/watch?v=VxMV6wGS3NY" referrerpolicy="origin" rel="noopener" target="_blank">this one from GreatScott!</a>) and practicing with an inexpensive <a href="https://www.amazon.com/Gikfun-Beginner-Components-Practice-Soldering/dp/B01HPSRXJ0/ref=sr_1_3?keywords=SMT+practice+kit&amp;qid=1640449486&amp;sr=8-3" referrerpolicy="origin" rel="noopener" target="_blank">surface mount training board</a>.</p>
+<p>The part of the build can take about <strong>two hours</strong> to complete.</p>
+<h2 id="tools-and-materials-required">Tools and materials required<a class="headerlink" href="#tools-and-materials-required" referrerpolicy="origin" title="Permanent link">#</a></h2>
+<p>Before you begin, make sure that you've got:</p>
+<ul>
+<li>Safety glasses. Yes, really.</li>
+<li>Proper ventilation- at least open a window or two.</li>
+<li>Tweezers, like <a href="https://www.adafruit.com/product/422" referrerpolicy="origin" rel="noopener" target="_blank">these</a>.</li>
+<li>A <strong>temperature-controlled</strong> soldering iron, like <a href="https://www.adafruit.com/product/1204" referrerpolicy="origin" rel="noopener" target="_blank">this one</a>. It is very important to use a temperature-controlled iron, since unregulated irons can easily get hot enough to damage components. You should set your iron temperature based on your solder manufacturer's recommendations.</li>
+<li>Solder. We suggest using soldering with "no clean" flux. If you do use a different kind of flux, be sure to carefully clean the flux residue off based on the guidelines provided by the manufacturer of your solder. For an inexpensive option, we recommend <a href="https://www.adafruit.com/product/734" referrerpolicy="origin" rel="noopener" target="_blank">Adafruit's SAC305 solder</a>, and for a higher-quality option we recommend <a href="https://www.kester.com/products/product/275-flux-cored-wire" referrerpolicy="origin" rel="noopener" target="_blank">Kester 275 K100LD</a> (the same solder we use).</li>
+<li><a href="https://www.adafruit.com/product/149" referrerpolicy="origin" rel="noopener" target="_blank">Solder wick</a>.</li>
+<li>Flux. A convenient and easy option is a no-clean flux pen - we recommend <a href="https://www.sra-solder.com/sra-312-no-clean-flux-pen-refillable" referrerpolicy="origin" rel="noopener" target="_blank">SRA's refillable pens</a>.</li>
+<li>A magnifying glass or fantastic eyesight.</li>
+</ul>
+<p>If you want to be extraordinarily well prepared:</p>
+<ul>
+<li>A microscope. This can be useful for identifying any issues with soldering. A relatively inexpensive option is <a href="https://www.amazon.com/Opti-Tekscope-Microscope-Advanced-Definition-Industrial/dp/B0184CCOY0" referrerpolicy="origin" rel="noopener" target="_blank">this one</a>.</li>
+<li>A <a href="https://www.adafruit.com/product/1869" referrerpolicy="origin" rel="noopener" target="_blank">hot air station</a> can be useful for undoing any soldering and is very helpful if you make a mistake like soldering a chip backwards.</li>
+</ul>
+<h2 id="kit-contents">Kit contents<a class="headerlink" href="#kit-contents" referrerpolicy="origin" title="Permanent link">#</a></h2>
+<p>Your kit should contain the following items for surface mount assembly. If any are missing please email us at <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#115;&#117;&#112;&#112;&#111;&#114;&#116;&#64;&#119;&#105;&#110;&#116;&#101;&#114;&#98;&#108;&#111;&#111;&#109;&#46;&#99;&#111;&#109;" referrerpolicy="origin">&#115;&#117;&#112;&#112;&#111;&#114;&#116;&#64;&#119;&#105;&#110;&#116;&#101;&#114;&#98;&#108;&#111;&#111;&#109;&#46;&#99;&#111;&#109;</a>. Note that your kit will also have the components needed for the <a href="/build" referrerpolicy="origin">through hole kit</a>, but they aren't listed here for brevity.</p>
+<ul>
+<li>(1) Helium PCB</li>
+<li>(4) Blue LEDs</li>
+<li>(4) Red LEDs</li>
+<li>(2) 10uF capacitors</li>
+<li>(8) 0.1uF capacitors</li>
+<li>(2) Schottky barrier diodes</li>
+<li>(2) Ferrite beads</li>
+<li>(9) 50Ω resistors</li>
+<li>(6) 100kΩ 0.05% resistors</li>
+<li>(4) 1.5kΩ resistors</li>
+<li>(1) 1kΩ resistor</li>
+<li>(4) OPA4991 op amps</li>
+</ul>
+<h2 id="precautions">Precautions<a class="headerlink" href="#precautions" referrerpolicy="origin" title="Permanent link">#</a></h2>
+<p>The LEDs and diodes must be installed in the correct orentation. The PCB and the components have corresponding marks on one side, make sure these are aligned.</p>
+<div class="columns">
+    <div class="column">
+        <img src="/images/led.jpg" alt="A photo showing the proper alignment of LEDs">
+    </div>
+    <div class="column">
+        <img src="/images/diode.jpg" alt="A photo showing the proper alignment of diodes">
+    </div>
+</div>
+
+<div class="admonition warning">
+<p class="admonition-title">Don't burn out your lights</p>
+<p>Be careful when soldering the LEDs, as overheating or touching their lens with a soldering iron can melt and destroy them.</p>
+</div>
+<p>The ICs also have be installed in the correct orentation. The IC has a circle in one corner that designates pin 1. This should be matched with black circle or star on the PCB. The pictures in the <a href="#assembly" referrerpolicy="origin">assembly section</a> also highlight pin 1 in <strong style="color:green;">green</strong>.</p>
+<p><img alt="IC alignment" src="../images/ic.jpg" style="max-width: 50%; margin-left: auto; margin-right: auto; display: block;" /></p>
+<h2 id="assembly">Assembly<a class="headerlink" href="#assembly" referrerpolicy="origin" title="Permanent link">#</a></h2>
+<p>Helium has components on both sides of the PCB. The interactive tables and images below show how to place each component.</p>
+<ul>
+<li>Components are grouped by value so that you can work with one strip of components at a time.</li>
+<li><strong>Click</strong> on a row to highlight components on the PCB image.</li>
+<li>Use the checkboxes to keep track of which components you've finished.</li>
+</ul>
+<div class="pcb-assembly" data-pcb-assembly="/pcb-data.json" data-pcb-rotate></div>
+<p><link rel="stylesheet" href="/winterjs/pcbassembly.css"/></p>
+<script type="module" src="/winterjs/pcbassembly.js"></script>
+
+<h2 id="inspection-cleaning">Inspection &amp; cleaning<a class="headerlink" href="#inspection-cleaning" referrerpolicy="origin" title="Permanent link">#</a></h2>
+<p>Before moving on, take a moment to inspect the PCB and fixup any missing components or missing bridges. If you used solder or flux that requires cleaning then now is the time to clean your PCB according to the instructions provided by your solder or flux.</p>
+<h2 id="next-steps">Next steps<a class="headerlink" href="#next-steps" referrerpolicy="origin" title="Permanent link">#</a></h2>
+<p>Congratulations, you put finished the surface mount assembly! Now that you've done the hard part, you can continue on to the <a href="/build" referrerpolicy="origin">through hole assembly</a> to complete the build.</p></article>
+		</div>
+	</section>
+
+
+	<footer class="footer">
+		<div class="container is-max-desktop">
+			<p class="copyright">© 2021 Winterbloom</p>
+			<p class="copyright"> Licensed under Creative Commons CC BY-SA 4.0</p>
+			<p class="edit-me">
+				Found an issue?
+				<a href="mailto:support@winterbloom.com">Send us a message</a>
+			</p>
+			<p class="edit-me">
+				<a href="https://github.com/wntrblm/Helium/edit/main/user_guide/docs/surface-mount-build.md">Edit this page on GitHub</a>.
+			</p>
+			<p class="updated">
+				Last updated on June 19, 2022
+			</p>
+		</div>
+	</footer>
+
+	<button type="" class="dark-mode-switch" aria-label="switch between dark and light mode">
+		<span class="material-icons">dark_mode</span>
+	</button>
+</body>
+
+<script type="text/javascript" src="../scripts/theme.js"></script>
+</html>
