@@ -6,7 +6,7 @@
 
 ## Specifications
 
-* [$89 MSRP](https://winterbloom.com/shop/helium)
+* Available [assembled](https://winterbloom.com/shop/helium) or as a [kit](https://winterbloom.com/shop/helium-kit)
 * 6 HP
 * +12v @ 35mA, -12v @ 35mA
 * 22mm deep
