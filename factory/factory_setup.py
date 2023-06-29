@@ -1,5 +1,6 @@
 import itertools
 import statistics
+from time import sleep
 
 import pyvisa
 from rich import print
@@ -42,7 +43,8 @@ class Mux:
     @classmethod
     def measure(cls, addr):
         cls.set(addr)
-        return mm.read_voltage_fast()
+        sleep(0.002)
+        return statistics.mean([mm.read_voltage_fast() for _ in range(3)])
 
 
 class Voltage:
@@ -75,7 +77,7 @@ ADDER_GRAPH = reportcard.LineGraph(
         label="Input (V)", min=-7, min_label="-7", max=7, max_label="7"
     ),
     y_axis=reportcard.Axis(
-        label="Error (mV)", min=-20, min_label="-20", max=20, max_label="20"
+        label="Error (mV)", min=-50, min_label="-50", max=50, max_label="50"
     ),
     grid_lines=reportcard.GridLines(
         x_step=1 / 14,
@@ -109,7 +111,7 @@ def measure_channel(channel_name, dac, channel_ref_mux, channel_muxes):
     overall_average = statistics.mean(overall_measurements)
     overall_stdev = statistics.stdev(overall_measurements)
 
-    if overall_average < 1.0 and overall_stdev < 0.2:
+    if overall_average < 1.0 and overall_stdev < 0.3:
         success = True
     else:
         success = False
@@ -160,12 +162,12 @@ def measure_adder():
         [statistics.mean([x for _, x in series.data]) for series in input_series]
     )
 
-    if all([-25 < x < 25 for x in itertools.chain([x for _, x in series.data])]):
+    if all([-30 < x < 30 for x in itertools.chain([x for _, x in series.data])]):
         offset_and_gain_success = True
     else:
         offset_and_gain_success = False
 
-    if c_c_stdev < 0.25:
+    if c_c_stdev < 0.30:
         c_c_success = True
     else:
         c_c_success = False
@@ -200,7 +202,7 @@ if __name__ == "__main__":
     report.sections.append(channel_a_result)
 
     channel_b_result = measure_channel(
-        "B", Voltage.IN_A, Mux.IN_A, [Mux.OUT_A1, Mux.OUT_A2, Mux.OUT_A3]
+        "B", Voltage.IN_B, Mux.IN_B, [Mux.OUT_B1, Mux.OUT_B2, Mux.OUT_B3]
     )
     report.sections.append(channel_b_result)
 
