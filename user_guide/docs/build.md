@@ -53,8 +53,6 @@ Your kit should contain the following items. If any are missing please email us 
     <option value="jacks">1/8" jacks (16)</option>
     <option value="nuts">Hex nuts for the 1/8" jacks (16)</option>
     <option value="power-header">Eurorack power header (1)</option>
-    <option value="power-cable">Eurorack power cable (1)</option>
-    <option value="screws">M3x6 screws (2)</option>
     <option value="rubber-bands">Rubber bands (2)</option>
 </datalist>
 <script type="module" src="/scripts/svgmap.js"></script>
@@ -65,8 +63,6 @@ Your kit should contain the following items. If any are missing please email us 
 - (16) 1/8" jacks
 - (16) Hex nuts for the 1/8" jacks
 - (1) Eurorack power header
-- (1) Eurorack power cable
-- (2) M3x6 screws for attaching the module to your rack
 - (2) Rubber bands
 
 ## Soldering the power header
