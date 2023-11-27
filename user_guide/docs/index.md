@@ -36,20 +36,20 @@ To install this into your Eurorack setup:
 
 Helium has three independent buffered multiples that each have three outputs. These are also called *unity gain buffers*.
 
-![Illustration of using Helium's three channels independently](/images/three-channel.png){: .dark-invert}
+![Illustration of using Helium's three channels independently](images/three-channel.png){: .dark-invert}
 
 Each channel's input is on the top left and the three buffered outputs follow on the right and below. The LEDs for each channel will glow blue for positive signals, red for negative signals, and purple for audio signals.
 
 Additionally, the inputs for channel two and three are chained so if nothing is connected to the input then the input of the preceding channel is used. This allows you to use Helium to buffer a single signal to up to nine outputs.
 
-![Illustration of using Helium as a single channel, nine output buffer](/images/one-channel.png){: .dark-invert}
+![Illustration of using Helium as a single channel, nine output buffer](images/one-channel.png){: .dark-invert}
 
 
 ## Using the precision adder
 
 Helium has a precision adder with three inputs and one output. It sums the three inputs into a single output and works equally well for CV and audio signals. Precision adders are also called *unity gain mixers*.
 
-![Illustration of using Helium as a precision adder](/images/adder.png)
+![Illustration of using Helium as a precision adder](images/adder.png)
 
 The inputs are the top two and bottom left jacks (shown in teal, purple, and red) while the output is the bottom right jack (shown in yellow). Unconnected inputs do not affect the output. Just like with the buffered multiple channels, The LED in the middle will glow blue for positive signals, red for negative signals, and purple for audio signals (it's shown in yellow above for illustrative purposes).
 

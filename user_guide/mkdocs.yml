@@ -9,6 +9,7 @@ markdown_extensions:
     - admonition
     - def_list
     - attr_list
+    - footnotes
     - toc:
           permalink: "#"
           toc_depth: 2-3
@@ -16,6 +17,8 @@ markdown_extensions:
           use_pygments: True
     - pymdownx.superfences
     - pymdownx.magiclink
+    - pymdownx.tilde:
+          subscript: true
     - md_in_html
     - markdown_link_attr_modifier:
           new_tab: "external_only"
@@ -23,6 +26,6 @@ markdown_extensions:
               referrerpolicy: "origin"
 nav:
     - "User Guide": index.md
-    - "Kit Build Instructions":
-        - "Through hole": build.md
-        - "Surface mount": surface-mount-build.md
+    - "Build Instructions":
+        - "Kit": kit-build.md
+        - "Self-sourced": self-source-build.md
