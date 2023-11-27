@@ -419,10 +419,10 @@
       "no_connect_dangling": "warning",
       "pin_not_connected": "error",
       "pin_not_driven": "error",
-      "pin_to_pin": "warning",
+      "pin_to_pin": "error",
       "power_pin_not_driven": "error",
       "similar_labels": "warning",
-      "simulation_model_issue": "error",
+      "simulation_model_issue": "ignore",
       "unannotated": "error",
       "unit_value_mismatch": "error",
       "unresolved_variable": "error",
@@ -541,7 +541,7 @@
       "intersheets_ref_suffix": "",
       "junction_size_choice": 3,
       "label_size_ratio": 0.25,
-      "pin_symbol_size": 25.0,
+      "pin_symbol_size": 0.0,
       "text_offset_ratio": 0.08
     },
     "legacy_lib_dir": "",
@@ -549,7 +549,7 @@
     "meta": {
       "version": 1
     },
-    "net_format_name": "Pcbnew",
+    "net_format_name": "KiCad",
     "ngspice": {
       "fix_include_paths": true,
       "fix_passive_vals": false,
@@ -574,6 +574,18 @@
     [
       "55082cc1-c956-45a6-b2b5-3db02a6da9d0",
       ""
+    ],
+    [
+      "f14e9dba-5987-4bff-8255-46fc3558f731",
+      "Power"
+    ],
+    [
+      "0d23a21e-44e3-4598-b605-b35ee76a3ef6",
+      "Mults"
+    ],
+    [
+      "76ea8987-93c7-4703-afed-e481621a5fa8",
+      "Precision Adder"
     ]
   ],
   "text_variables": {}
