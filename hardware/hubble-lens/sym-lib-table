@@ -1,0 +1,5 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "testkit-rescue")(type "Legacy")(uri "${KIPRJMOD}/testkit-rescue.lib")(options "")(descr ""))
+  (lib (name "hubble-lens-rescue")(type "KiCad")(uri "${KIPRJMOD}/hubble-lens-rescue.kicad_sym")(options "")(descr ""))
+)
