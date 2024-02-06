@@ -2,7 +2,7 @@
 title: Kit build guide
 ---
 
-# Helium kit build guide
+# Build
 
 Welcome to the build guide for Helium's DIY kit. We hope you have a great time putting this module together and a wonderful time using it.
 
@@ -14,47 +14,41 @@ This build takes around **one hour** to complete.
 
 [discord]: https://discord.gg/UpfqghQ
 
-## Tools and materials required
+## Tools required
 
-Before jumping in, make sure you have:
+Before you begin, make sure that you've got:
 
-* Safety glasses. Yes, really.
-* Proper ventilation- at least open a window or two.
-* A soldering iron, like [this one](https://www.adafruit.com/product/180).
-* Solder, we can recommend [Adafruit's 60/40 **no-clean** rosin core solder](https://www.adafruit.com/product/145). We suggest using soldering with "no clean" flux. If you do use a different kind of flux, be sure to carefully clean the flux residue off based on the guidelines provided by the manufacturer of your solder.
+-   Safety glasses. Yes, **really**. A pair like [these][safety glasses] are fine.
+-   Proper ventilation, like this [small filtered fan](https://a.co/d/eUfPCRO).
+-   A **temperature-controlled** soldering iron, like this [Hakko] or the [Pinecil]. It is very important to use a temperature-controlled iron, since unregulated irons can easily get hot enough to damage components. You should set your iron temperature based on your solder manufacturer's recommendations.
+-   Solder. We recommend [Adafruit's SAC305 solder][adafruit solder] or [Kester 275 K100LD].
+-   A small flat head screwdriver, like [this one][small screwdriver].
+
+!!! question "Flux"
+    We suggest using solder with "no clean" flux. If you use a different kind of flux, be sure to carefully clean the flux residue off based on the guidelines provided by the manufacturer of your solder. Take special care with the LEDs and potentiometers, as they can be damaged by water and flux cleaners.
+
+[safety glasses]: https://a.co/d/dMXvPP6
+[tweezers]: https://www.adafruit.com/product/422
+[Hakko]: https://www.adafruit.com/product/1204
+[Pinecil]: https://pine64.com/product/pinecil-smart-mini-portable-soldering-iron/
+[adafruit solder]: https://www.adafruit.com/product/734
+[Kester 275 K100LD]: https://www.kester.com/products/product/275-flux-cored-wire
+[flux pen]: https://www.sra-solder.com/sra-312-no-clean-flux-pen-refillable
+[small screwdriver]: https://lovemyswitches.com/2mm-flat-head-screwdriver-for-knob-set-screws/
+
 
 ## Kit contents
 
 Your kit should contain the following items. If any are missing please email us at support@winterbloom.com.
 
-<object
-    alt="Kit contents"
-    data-is-svg-map
-    data-list="kit-contents-img-datalist"
-    data-stylesheet="/styles/kit-contents-svgmap.css"
-    data-info-text-template="kit-contents-img-info-text"
-    data="../images/kit.svg"
-    height="100%"
-    id="kit-contents-img"
-    type="image/svg+xml"
-    width="100%">
-</object>
-<template id="kit-contents-img-info-text">
-    <g id="info-text-container">
-        <rect data-size-to="info-text"></rect>
-        <text id="info-text"></text>
-    </g>
-</template>
-<datalist id="kit-contents-img-datalist">
-    <option value="mainboard">Mainboard</option>
-    <option value="panel">Front panel</option>
-    <option value="jacks">1/8" jacks (16)</option>
-    <option value="nuts">Hex nuts for the 1/8" jacks (16)</option>
-    <option value="power-header">Eurorack power header (1)</option>
-    <option value="rubber-bands">Rubber bands (2)</option>
-</datalist>
-<script type="module" src="/scripts/svgmap.js"></script>
-<link rel="stylesheet" href="/styles/svgmap.css"/>
+<winter-image-map src="../images/kit.svg">
+    <winter-image-map-item id="mainboard">Mainboard</winter-image-map-item>
+    <winter-image-map-item id="panel">Front panel</winter-image-map-item>
+    <winter-image-map-item id="jacks">1/8" jacks (16)</winter-image-map-item>
+    <winter-image-map-item id="nuts">Hex nuts for the 1/8" jacks (16)</winter-image-map-item>
+    <winter-image-map-item id="power-header">Eurorack power header (1)</winter-image-map-item>
+    <winter-image-map-item id="rubber-bands">Rubber bands (2)</winter-image-map-item>
+</winter-image-map>
 
 - (1) Mainboard
 - (1) Front panel
@@ -94,8 +88,10 @@ Continue this pattern for the third and fourth jacks in the spaces labeled `In B
 
 Likewise for the remaining jacks. Continue the pattern of alternating orientation and sharing the hole for the third leg until all jacks are placed.
 
-![The remaining jacks on the left side of the board all placed](images/8-place-more-jacks-1.jpg)
-![All jacks on the board placed](images/9-place-remaining-jacks-2.jpg)
+<winter-carousel>
+    ![The remaining jacks on the left side of the board all placed](images/8-place-more-jacks-1.jpg)
+    ![All jacks on the board placed](images/9-place-remaining-jacks-2.jpg)
+</winter-carousel>
 
 ## Using the front panel as a jig
 
@@ -105,8 +101,10 @@ Since the jacks need to peek through the front panel, you can use it as a jig to
 
 Then, use the two rubber bands to temporarily hold the front panel on while you're working on it. You'll need to double- or triple- over the rubber band to get it tight.
 
-![A rubber band being pulled taught over one side of the module](images/12-another-rubber-band-3.jpg)
-![The same rubber band being doubled over](images/11-rubber-band-4.jpg)
+<winter-carousel>
+    ![A rubber band being pulled taught over one side of the module](images/12-another-rubber-band-3.jpg)
+    ![The same rubber band being doubled over](images/11-rubber-band-4.jpg)
+</winter-carousel>
 
 Put the two rubber bands on opposite sides of the module so that everything is held down snugly.
 

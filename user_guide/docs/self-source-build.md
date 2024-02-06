@@ -132,165 +132,165 @@ If you're making multiple Heliums, we'd recommend picking up a [solder paste ste
 
 Below is the bill of materials for Helium's electronic components, including part numbers and purchase links.
 
-<div class="table-container">
-<table class="table bom is-striped is-narrow is-hoverable is-fullwidth is-size-7">
-    <thead>
-        <tr>
-            <th>Reference</th>
-            <th>Value &amp; Rating</th>
-            <th>Footprint</th>
-            <th>Qty</th>
-            <th>Part no</th>
-            <th>Digi-Key</th>
-            <th>Mouser</th>
-            <th>LCSC</th>
-            <th>Notes</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>C1, C2</td>
-            <td>10µF<br/>25V/±10%/X5R</td>
-            <td>0805</td>
-            <td>2</td>
-            <td>Murata GRM21BR61E106KA73K</td>
-            <td><a href="https://www.digikey.com/en/products?keywords=490-16824-1-ND" referrerpolicy="origin" rel="external noopener" target="_blank">490-16824-1-ND</a></td>
-            <td><a href="https://www.mouser.com/c/?q=81-GRM21BR61E106KA3K" referrerpolicy="origin" rel="external noopener" target="_blank">81-GRM21BR61E106KA3K</a></td>
-            <td><a href="https://www.lcsc.com/search?q=C3909351" referrerpolicy="origin" rel="external noopener" target="_blank">C3909351</a></td>
-            <td>5</td>
-        </tr>
-        <tr>
-            <td>C3-C10</td>
-            <td>100nF<br/>25V/±10%/X5R</td>
-            <td>0603</td>
-            <td>8</td>
-            <td>Samsung CL10B104KB8NNNC</td>
-            <td><a href="https://www.digikey.com/en/products?keywords=1276-1000-2-ND" referrerpolicy="origin" rel="external noopener" target="_blank">1276-1000-2-ND</a></td>
-            <td><a href="https://www.mouser.com/c/?q=187-CL10B104KB8NNNC" referrerpolicy="origin" rel="external noopener" target="_blank">187-CL10B104KB8NNNC</a></td>
-            <td><a href="https://www.lcsc.com/search?q=C1591" referrerpolicy="origin" rel="external noopener" target="_blank">C1591</a></td>
-            <td>5</td>
-        </tr>
-        <tr>
-            <td>C11</td>
-            <td>18pF<br/>25V/±10%/C0G</td>
-            <td>0603</td>
-            <td>1</td>
-            <td>Yageo CC0603JPNPO9BN120</td>
-            <td><a href="https://www.digikey.com/en/products?keywords=13-CC0603JPNPO9BN120CT-ND" referrerpolicy="origin" rel="external noopener" target="_blank">13-CC0603JPNPO9BN120CT-ND</a></td>
-            <td><a href="https://www.mouser.com/c/?q=603-CC603JPNPO9BN120" referrerpolicy="origin" rel="external noopener" target="_blank">603-CC603JPNPO9BN120</a></td>
-            <td><a href="https://www.lcsc.com/search?q=C1853092" referrerpolicy="origin" rel="external noopener" target="_blank">C1853092</a></td>
-            <td>5</td>
-        </tr>
-        <tr>
-            <td>R1-R3, R5-R7, R12-R14, R17</td>
-            <td>51Ω 100mW/±1%/Thin</td>
-            <td>0603</td>
-            <td>10</td>
-            <td>Yageo RT0603FRE0751RL</td>
-            <td><a href="https://www.digikey.com/en/products?keywords=13-RT0603FRE0751RLCT-ND" referrerpolicy="origin" rel="external noopener" target="_blank">13-RT0603FRE0751RLCT-ND</a></td>
-            <td><a href="https://www.mouser.com/c/?q=603-RT0603FRE0751RL" referrerpolicy="origin" rel="external noopener" target="_blank">603-RT0603FRE0751RL</a></td>
-            <td><a href="https://www.lcsc.com/search?q=C849799" referrerpolicy="origin" rel="external noopener" target="_blank">C849799</a></td>
-            <td>5</td>
-        </tr>
-        <tr>
-            <td>R4, R8, R15, R18-R20</td>
-            <td>100kΩ<br/>100mW/±0.05%/Thin</td>
-            <td>0603</td>
-            <td>6</td>
-            <td>Susumu RG1608N-104-W-T1</td>
-            <td><a href="https://www.digikey.com/en/products?keywords=RG16N100KWCT-ND" referrerpolicy="origin" rel="external noopener" target="_blank">RG16N100KWCT-ND</a></td>
-            <td><a href="https://www.mouser.com/c/?q=754-RG1608N-104-W-T1" referrerpolicy="origin" rel="external noopener" target="_blank">754-RG1608N-104-W-T1</a></td>
-            <td><a href="https://www.lcsc.com/search?q=C1722256" referrerpolicy="origin" rel="external noopener" target="_blank">C1722256</a></td>
-            <td>1</td>
-        </tr>
-        <tr>
-            <td>R9-R11, R16</td>
-            <td>1.5kΩ<br/>100mW/±5%/Thick</td>
-            <td>0603</td>
-            <td>4</td>
-            <td>Yageo RC0603JR-071K5L</td>
-            <td><a href="https://www.digikey.com/en/products?keywords=311-1.5KGRCT-ND" referrerpolicy="origin" rel="external noopener" target="_blank">311-1.5KGRCT-ND</a></td>
-            <td><a href="https://www.mouser.com/c/?q=603-RC0603JR-071K5L" referrerpolicy="origin" rel="external noopener" target="_blank">603-RC0603JR-071K5L</a></td>
-            <td><a href="https://www.lcsc.com/search?q=C114680" referrerpolicy="origin" rel="external noopener" target="_blank">C114680</a></td>
-            <td>5</td>
-        </tr>
-        <tr>
-            <td>FB1, FB2</td>
-            <td>1kΩ @ 100MHz<br/>300mA</td>
-            <td>0603</td>
-            <td>2</td>
-            <td>Murata BLM18AG102SN1D</td>
-            <td><a href="https://www.digikey.com/en/products?keywords=490-1015-1-ND" referrerpolicy="origin" rel="external noopener" target="_blank">490-1015-1-ND</a></td>
-            <td><a href="https://www.mouser.com/c/?q=81-BLM11A102S" referrerpolicy="origin" rel="external noopener" target="_blank">81-BLM11A102S</a></td>
-            <td><a href="https://www.lcsc.com/search?q=C85824" referrerpolicy="origin" rel="external noopener" target="_blank">C85824</a></td>
-            <td>6</td>
-        </tr>
-        <tr>
-            <td>D1, D2</td>
-            <td>Schottky<br/>30V/500mA</td>
-            <td>SOD-123</td>
-            <td>2</td>
-            <td>Nexperia PMEG2005EGWX</td>
-            <td><a href="https://www.digikey.com/en/products?keywords=1727-7329-1-ND" referrerpolicy="origin" rel="external noopener" target="_blank">1727-7329-1-ND</a></td>
-            <td><a href="https://www.mouser.com/c/?q=841-PMEG2005EGWX" referrerpolicy="origin" rel="external noopener" target="_blank">841-PMEG2005EGWX</a></td>
-            <td><a href="https://www.lcsc.com/search?q=C133636" referrerpolicy="origin" rel="external noopener" target="_blank">C133636</a></td>
-            <td>4</td>
-        </tr>
-        <tr>
-            <td>D3, D5, D7, D9</td>
-            <td>Positive LED<br/>Blue/3.3V/20mA</td>
-            <td>0805</td>
-            <td>4</td>
-            <td>Kingbright APT2012VBC/D</td>
-            <td><a href="https://www.digikey.com/en/products?keywords=754-1794-1-ND" referrerpolicy="origin" rel="external noopener" target="_blank">754-1794-1-ND</a></td>
-            <td><a href="https://www.mouser.com/c/?q=604-APT2012VBC/D" referrerpolicy="origin" rel="external noopener" target="_blank">604-APT2012VBC/D</a></td>
-            <td><a href="https://www.lcsc.com/search?q=C5879386" referrerpolicy="origin" rel="external noopener" target="_blank">C5879386</a></td>
-            <td>2</td>
-        </tr>
-        <tr>
-            <td>D4, D6, D8, D10</td>
-            <td>Positive LED<br/>Red/3.3V/20mA</td>
-            <td>0805</td>
-            <td>4</td>
-            <td>Kingbright APT2012VBC/D</td>
-            <td><a href="https://www.digikey.com/en/products?keywords=754-1133-1-ND" referrerpolicy="origin" rel="external noopener" target="_blank">754-1133-1-ND</a></td>
-            <td><a href="https://www.mouser.com/c/?q=604-APT2012SURCK" referrerpolicy="origin" rel="external noopener" target="_blank">604-APT2012SURCK</a></td>
-            <td><a href="https://www.lcsc.com/search?q=C5875730" referrerpolicy="origin" rel="external noopener" target="_blank">C5875730</a></td>
-            <td>2</td>
-        </tr>
-        <tr>
-            <td>U1, U2, U4, U6</td>
-            <td>OPA4991</td>
-            <td>TSSOP-14</td>
-            <td>4</td>
-            <td>TI OPA4991IPWR</td>
-            <td><a href="https://www.digikey.com/en/products?keywords=296-OPA4991IPWRCT-ND" referrerpolicy="origin" rel="external noopener" target="_blank">296-OPA4991IPWRCT-ND</a></td>
-            <td><a href="https://www.mouser.com/c/?q=595-OPA4991IPWR" referrerpolicy="origin" rel="external noopener" target="_blank">595-OPA4991IPWR</a></td>
-            <td><a href="https://www.lcsc.com/search?q=C2873620" referrerpolicy="origin" rel="external noopener" target="_blank">C2873620</a></td>
-            <td>2</td>
-        </tr>
-        <tr>
-            <td>J1</td>
-            <td>2x5 2.54mm<br/>IDC Header</td>
-            <td>-</td>
-            <td>1</td>
-            <td>On-shore 302-S101</td>
-            <td><a href="https://www.digikey.com/en/products?keywords=ED1543-ND" referrerpolicy="origin" rel="external noopener" target="_blank">ED1543-ND</a></td>
-            <td><a href="https://www.mouser.com/c/?q=710-61201021621" referrerpolicy="origin" rel="external noopener" target="_blank">710-61201021621</a></td>
-            <td><a href="https://www.lcsc.com/search?q=C429962" referrerpolicy="origin" rel="external noopener" target="_blank">C429962</a></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>J2-J5, J7-J10, J12-J15, J17-J20</td>
-            <td>Audio jack</td>
-            <td>-</td>
-            <td>16</td>
-            <td>WQP-WQP518MA</td>
-            <td colspan="3">Available from <a href="https://winterbloom.com/shop/eurorack-jacks" referrerpolicy="origin" rel="external noopener" target="_blank">Winterbloom</a> or <a href="https://www.thonk.co.uk/shop/thonkiconn/" referrerpolicy="origin" rel="external noopener" target="_blank">Thonk</a></td>
-            <td></td>
-        </tr>
-    </tbody>
-</table>
+<div>
+    <table class="is-page-width is-high-density">
+        <thead>
+            <tr>
+                <th>Reference</th>
+                <th>Value &amp; Rating</th>
+                <th>Footprint</th>
+                <th align="right">Qty</th>
+                <th>Part no</th>
+                <th>Digi-Key</th>
+                <th>Mouser</th>
+                <th>LCSC</th>
+                <th align="right">Notes</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>C1, C2</td>
+                <td>10µF<br/>25V/±10%/X5R</td>
+                <td>0805</td>
+                <td align="right">2</td>
+                <td>Murata GRM21BR61E106KA73K</td>
+                <td><a href="https://www.digikey.com/en/products?keywords=490-16824-1-ND" referrerpolicy="origin" rel="external noopener" target="_blank">490-16824-1-ND</a></td>
+                <td><a href="https://www.mouser.com/c/?q=81-GRM21BR61E106KA3K" referrerpolicy="origin" rel="external noopener" target="_blank">81-GRM21BR61E106KA3K</a></td>
+                <td><a href="https://www.lcsc.com/search?q=C3909351" referrerpolicy="origin" rel="external noopener" target="_blank">C3909351</a></td>
+                <td align="right">5</td>
+            </tr>
+            <tr>
+                <td>C3-C10</td>
+                <td>100nF<br/>25V/±10%/X5R</td>
+                <td>0603</td>
+                <td align="right">8</td>
+                <td>Samsung CL10B104KB8NNNC</td>
+                <td><a href="https://www.digikey.com/en/products?keywords=1276-1000-2-ND" referrerpolicy="origin" rel="external noopener" target="_blank">1276-1000-2-ND</a></td>
+                <td><a href="https://www.mouser.com/c/?q=187-CL10B104KB8NNNC" referrerpolicy="origin" rel="external noopener" target="_blank">187-CL10B104KB8NNNC</a></td>
+                <td><a href="https://www.lcsc.com/search?q=C1591" referrerpolicy="origin" rel="external noopener" target="_blank">C1591</a></td>
+                <td align="right">5</td>
+            </tr>
+            <tr>
+                <td>C11</td>
+                <td>18pF<br/>25V/±10%/C0G</td>
+                <td>0603</td>
+                <td align="right">1</td>
+                <td>Yageo CC0603JPNPO9BN120</td>
+                <td><a href="https://www.digikey.com/en/products?keywords=13-CC0603JPNPO9BN120CT-ND" referrerpolicy="origin" rel="external noopener" target="_blank">13-CC0603JPNPO9BN120CT-ND</a></td>
+                <td><a href="https://www.mouser.com/c/?q=603-CC603JPNPO9BN120" referrerpolicy="origin" rel="external noopener" target="_blank">603-CC603JPNPO9BN120</a></td>
+                <td><a href="https://www.lcsc.com/search?q=C1853092" referrerpolicy="origin" rel="external noopener" target="_blank">C1853092</a></td>
+                <td align="right">5</td>
+            </tr>
+            <tr>
+                <td>R1-R3, R5-R7, R12-R14, R17</td>
+                <td>51Ω 100mW/±1%/Thin</td>
+                <td>0603</td>
+                <td align="right">10</td>
+                <td>Yageo RT0603FRE0751RL</td>
+                <td><a href="https://www.digikey.com/en/products?keywords=13-RT0603FRE0751RLCT-ND" referrerpolicy="origin" rel="external noopener" target="_blank">13-RT0603FRE0751RLCT-ND</a></td>
+                <td><a href="https://www.mouser.com/c/?q=603-RT0603FRE0751RL" referrerpolicy="origin" rel="external noopener" target="_blank">603-RT0603FRE0751RL</a></td>
+                <td><a href="https://www.lcsc.com/search?q=C849799" referrerpolicy="origin" rel="external noopener" target="_blank">C849799</a></td>
+                <td align="right">5</td>
+            </tr>
+            <tr>
+                <td>R4, R8, R15, R18-R20</td>
+                <td>100kΩ<br/>100mW/±0.05%/Thin</td>
+                <td>0603</td>
+                <td align="right">6</td>
+                <td>Susumu RG1608N-104-W-T1</td>
+                <td><a href="https://www.digikey.com/en/products?keywords=RG16N100KWCT-ND" referrerpolicy="origin" rel="external noopener" target="_blank">RG16N100KWCT-ND</a></td>
+                <td><a href="https://www.mouser.com/c/?q=754-RG1608N-104-W-T1" referrerpolicy="origin" rel="external noopener" target="_blank">754-RG1608N-104-W-T1</a></td>
+                <td><a href="https://www.lcsc.com/search?q=C1722256" referrerpolicy="origin" rel="external noopener" target="_blank">C1722256</a></td>
+                <td align="right">1</td>
+            </tr>
+            <tr>
+                <td>R9-R11, R16</td>
+                <td>1.5kΩ<br/>100mW/±5%/Thick</td>
+                <td>0603</td>
+                <td align="right">4</td>
+                <td>Yageo RC0603JR-071K5L</td>
+                <td><a href="https://www.digikey.com/en/products?keywords=311-1.5KGRCT-ND" referrerpolicy="origin" rel="external noopener" target="_blank">311-1.5KGRCT-ND</a></td>
+                <td><a href="https://www.mouser.com/c/?q=603-RC0603JR-071K5L" referrerpolicy="origin" rel="external noopener" target="_blank">603-RC0603JR-071K5L</a></td>
+                <td><a href="https://www.lcsc.com/search?q=C114680" referrerpolicy="origin" rel="external noopener" target="_blank">C114680</a></td>
+                <td align="right">5</td>
+            </tr>
+            <tr>
+                <td>FB1, FB2</td>
+                <td>1kΩ @ 100MHz<br/>300mA</td>
+                <td>0603</td>
+                <td align="right">2</td>
+                <td>Murata BLM18AG102SN1D</td>
+                <td><a href="https://www.digikey.com/en/products?keywords=490-1015-1-ND" referrerpolicy="origin" rel="external noopener" target="_blank">490-1015-1-ND</a></td>
+                <td><a href="https://www.mouser.com/c/?q=81-BLM11A102S" referrerpolicy="origin" rel="external noopener" target="_blank">81-BLM11A102S</a></td>
+                <td><a href="https://www.lcsc.com/search?q=C85824" referrerpolicy="origin" rel="external noopener" target="_blank">C85824</a></td>
+                <td align="right">6</td>
+            </tr>
+            <tr>
+                <td>D1, D2</td>
+                <td>Schottky<br/>30V/500mA</td>
+                <td>SOD-123</td>
+                <td align="right">2</td>
+                <td>Nexperia PMEG2005EGWX</td>
+                <td><a href="https://www.digikey.com/en/products?keywords=1727-7329-1-ND" referrerpolicy="origin" rel="external noopener" target="_blank">1727-7329-1-ND</a></td>
+                <td><a href="https://www.mouser.com/c/?q=841-PMEG2005EGWX" referrerpolicy="origin" rel="external noopener" target="_blank">841-PMEG2005EGWX</a></td>
+                <td><a href="https://www.lcsc.com/search?q=C133636" referrerpolicy="origin" rel="external noopener" target="_blank">C133636</a></td>
+                <td align="right">4</td>
+            </tr>
+            <tr>
+                <td>D3, D5, D7, D9</td>
+                <td>Positive LED<br/>Blue/3.3V/20mA</td>
+                <td>0805</td>
+                <td align="right">4</td>
+                <td>Kingbright APT2012VBC/D</td>
+                <td><a href="https://www.digikey.com/en/products?keywords=754-1794-1-ND" referrerpolicy="origin" rel="external noopener" target="_blank">754-1794-1-ND</a></td>
+                <td><a href="https://www.mouser.com/c/?q=604-APT2012VBC/D" referrerpolicy="origin" rel="external noopener" target="_blank">604-APT2012VBC/D</a></td>
+                <td><a href="https://www.lcsc.com/search?q=C5879386" referrerpolicy="origin" rel="external noopener" target="_blank">C5879386</a></td>
+                <td align="right">2</td>
+            </tr>
+            <tr>
+                <td>D4, D6, D8, D10</td>
+                <td>Positive LED<br/>Red/3.3V/20mA</td>
+                <td>0805</td>
+                <td align="right">4</td>
+                <td>Kingbright APT2012VBC/D</td>
+                <td><a href="https://www.digikey.com/en/products?keywords=754-1133-1-ND" referrerpolicy="origin" rel="external noopener" target="_blank">754-1133-1-ND</a></td>
+                <td><a href="https://www.mouser.com/c/?q=604-APT2012SURCK" referrerpolicy="origin" rel="external noopener" target="_blank">604-APT2012SURCK</a></td>
+                <td><a href="https://www.lcsc.com/search?q=C5875730" referrerpolicy="origin" rel="external noopener" target="_blank">C5875730</a></td>
+                <td align="right">2</td>
+            </tr>
+            <tr>
+                <td>U1, U2, U4, U6</td>
+                <td>OPA4991</td>
+                <td>TSSOP-14</td>
+                <td align="right">4</td>
+                <td>TI OPA4991IPWR</td>
+                <td><a href="https://www.digikey.com/en/products?keywords=296-OPA4991IPWRCT-ND" referrerpolicy="origin" rel="external noopener" target="_blank">296-OPA4991IPWRCT-ND</a></td>
+                <td><a href="https://www.mouser.com/c/?q=595-OPA4991IPWR" referrerpolicy="origin" rel="external noopener" target="_blank">595-OPA4991IPWR</a></td>
+                <td><a href="https://www.lcsc.com/search?q=C2873620" referrerpolicy="origin" rel="external noopener" target="_blank">C2873620</a></td>
+                <td align="right">2</td>
+            </tr>
+            <tr>
+                <td>J1</td>
+                <td>2x5 2.54mm<br/>IDC Header</td>
+                <td>-</td>
+                <td align="right">1</td>
+                <td>On-shore 302-S101</td>
+                <td><a href="https://www.digikey.com/en/products?keywords=ED1543-ND" referrerpolicy="origin" rel="external noopener" target="_blank">ED1543-ND</a></td>
+                <td><a href="https://www.mouser.com/c/?q=710-61201021621" referrerpolicy="origin" rel="external noopener" target="_blank">710-61201021621</a></td>
+                <td><a href="https://www.lcsc.com/search?q=C429962" referrerpolicy="origin" rel="external noopener" target="_blank">C429962</a></td>
+                <td align="right"></td>
+            </tr>
+            <tr>
+                <td>J2-J5, J7-J10, J12-J15, J17-J20</td>
+                <td>Audio jack</td>
+                <td>-</td>
+                <td align="right">16</td>
+                <td>WQP-WQP518MA</td>
+                <td colspan="3">Available from <a href="https://winterbloom.com/shop/eurorack-jacks" referrerpolicy="origin" rel="external noopener" target="_blank">Winterbloom</a> or <a href="https://www.thonk.co.uk/shop/thonkiconn/" referrerpolicy="origin" rel="external noopener" target="_blank">Thonk</a></td>
+                <td align="right"></td>
+            </tr>
+        </tbody>
+    </table>
 </div>
 
 Notes:
@@ -335,9 +335,7 @@ The interactive tables and images below show where to place each component.
 -   **Click** on a row to highlight components on the PCB image.
 -   Use the checkboxes to keep track of which components you've finished.
 
-<div class="pcb-assembly" data-pcb-assembly="/pcb-data.json" data-pcb-rotate></div>
-<link rel="stylesheet" href="/winterjs/pcbassembly.css"/>
-<script type="module" src="/winterjs/pcbassembly.js"></script>
+<winter-pcb-assembly src="/pcb-data.json" rotate></winter-pcb-assembly>
 
 ## Inspection & cleaning
 
