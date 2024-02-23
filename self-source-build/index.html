@@ -1,0 +1,464 @@
+<!doctype html>
+<html lang="en">
+  <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta charset="utf-8" />
+
+<meta
+  name="viewport"
+  content="width=device-width, initial-scale=1, shrink-to-fit=no" /><!-- Page author --><link rel="canonical" href="https://helium.wntr.dev/self-source-build/" /><link
+  rel="shortcut icon"
+  sizes="192x192"
+  href="/icon.png" />
+<link
+  rel="apple-touch-icon"
+  sizes="192x192"
+  href="/icon.png" />
+
+<meta name="generator" content="mkdocs-1.5.3" /><!-- Title --><title>
+          Helium
+          
+            
+          
+
+          
+            - Self-sourcing build guide
+          
+        </title><link rel="stylesheet" href="../winter.css" /></head>
+
+  <body
+    class=""
+    data-page="self-source-build/"><header>
+        <nav role="navigation" aria-label="main navigation">
+          <ul>
+            <li>
+              <a href="..">Helium</a>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <img class="logo" src="/winterbloom.png" alt="Winterbloom logo" />
+            </li>
+          </ul>
+        </nav>
+        <nav role="navigation" aria-label="secondary navigation">
+          <ul class="has-dividers"><li>
+                <a
+                  
+                  href="..">
+                  Manual
+                </a>
+              </li><li>
+                <a
+                  
+                  href="../kit-build/">
+                  Build
+                </a>
+              </li><li>
+                <a
+                  aria-current
+                  href="./">
+                  Self-source
+                </a>
+              </li></ul>
+          <ul><li>
+              <winter-dark-mode></winter-dark-mode>
+            </li>
+          </ul>
+        </nav>
+      </header><main
+      class="hide-title">
+  <article class="content"><h1 id="helium-self-sourcing-build-guide">Helium self-sourcing build guide<a class="headerlink" href="#helium-self-sourcing-build-guide" title="Permanent link">#</a></h1>
+<p>Welcome to the guide for self-sourcing and building <a href="../">Helium</a>. This guide is for folks who want to build a Helium on their own from bare printed circuit boards and components.</p>
+<div class="toc">
+<ul>
+<li><a href="#overview">Overview</a></li>
+<li><a href="#skills-required">Skills required</a></li>
+<li><a href="#tools-required">Tools required</a></li>
+<li><a href="#schematic">Schematic</a></li>
+<li><a href="#pcb-faceplate">PCB &amp; faceplate</a></li>
+<li><a href="#bill-of-materials">Bill of materials</a></li>
+<li><a href="#component-orientation">Component orientation</a></li>
+<li><a href="#assembly">Assembly</a></li>
+<li><a href="#inspection-cleaning">Inspection &amp; cleaning</a></li>
+<li><a href="#next-steps">Next steps</a></li>
+<li><a href="#support-us">Support us</a></li>
+</ul>
+</div>
+<h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">#</a></h2>
+<p>This process is not for the faint of heart! You'll need to find, purchase, assemble, and test everything yourself. If you just want to have fun putting together a kit, consider our <a href="https://winterbloom.com/shop/helium-kit">Helium DIY kit</a> which includes everything you need with a fully tested PCB that has all of the surface mount assembly done, leaving just the through-hole bits to you.</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Self-source</th>
+<th>DIY kit</th>
+<th>Fully assembled</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>PCBs</td>
+<td>❌</td>
+<td>✅</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>Faceplate</td>
+<td>❌</td>
+<td>✅</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>Components</td>
+<td>❌</td>
+<td>✅</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>Surface mount components soldered</td>
+<td>❌</td>
+<td>✅</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>Fully tested</td>
+<td>❌</td>
+<td>✅</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>Through hole components soldered</td>
+<td>❌</td>
+<td>❌</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>Difficulty</td>
+<td>Expert</td>
+<td>Easy</td>
+<td>None!</td>
+</tr>
+</tbody>
+</table>
+<p>Please read <strong>all instructions thoroughly before starting</strong>. If you have questions or run into trouble please reach out to us on <a href="https://discord.gg/UpfqghQ">discord</a> or drop us an email at <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#115;&#117;&#112;&#112;&#111;&#114;&#116;&#64;&#119;&#105;&#110;&#116;&#101;&#114;&#98;&#108;&#111;&#111;&#109;&#46;&#99;&#111;&#109;">&#115;&#117;&#112;&#112;&#111;&#114;&#116;&#64;&#119;&#105;&#110;&#116;&#101;&#114;&#98;&#108;&#111;&#111;&#109;&#46;&#99;&#111;&#109;</a>, though note that we have limited resources for supporting self-sourced builds.</p>
+<p>With all that said, we hope you have a great time putting this module together and a wonderful time using it. Good luck!</p>
+<h2 id="skills-required">Skills required<a class="headerlink" href="#skills-required" title="Permanent link">#</a></h2>
+<p>Building a Helium from scratch requires patience, care, and skill. Helium can be a great a project for learning these skills, but we do recommend being careful with some of the more expensive components. Though not strictly required, we recommend that you have:</p>
+<ul>
+<li>Experience finding and buying components from major distributors such as <a href="https://digikey.com">Digi-Key</a> or <a href="https://mouser.com">Mouser</a>.</li>
+<li>Experience submitting and buying printed circuit boards (PCBs) from services such as <a href="https://oshpark.com">OSHPark</a> or <a href="https://pcbway.com">PCBWay</a>.</li>
+<li>Experience preparing Gerber plot files from <a href="https://kicad.org">KiCAD</a> design files.</li>
+<li>Experience soldering <a href="https://en.wikipedia.org/wiki/File:SMT_sizes,_based_on_original_by_Zureks.svg">0603</a> and <a href="https://en.wikipedia.org/wiki/Thin_shrink_small_outline_package">TSSOP-16</a> components- We recommend watching tutorials on how to drag solder, such as <a href="https://www.youtube.com/watch?v=VxMV6wGS3NY">this one from GreatScott!</a>, and practicing with an inexpensive <a href="https://www.amazon.com/Gikfun-Beginner-Components-Practice-Soldering/dp/B01HPSRXJ0/ref=sr_1_3?keywords=SMT+practice+kit&amp;qid=1640449486&amp;sr=8-3">surface mount training board</a>.</li>
+</ul>
+<h2 id="tools-required">Tools required<a class="headerlink" href="#tools-required" title="Permanent link">#</a></h2>
+<p>Before you begin, make sure that you've got:</p>
+<ul>
+<li>Safety glasses. Yes, <strong>really</strong>. A pair like <a href="https://a.co/d/dMXvPP6">these</a> are fine.</li>
+<li>Proper ventilation, like this <a href="https://a.co/d/eUfPCRO">small filtered fan</a>.</li>
+<li><a href="https://www.adafruit.com/product/422">Tweezers</a>.</li>
+<li>A <strong>temperature-controlled</strong> soldering iron, like this <a href="https://www.adafruit.com/product/1204">Hakko</a> or the <a href="https://pine64.com/product/pinecil-smart-mini-portable-soldering-iron/">Pinecil</a>. It is very important to use a temperature-controlled iron, since unregulated irons can easily get hot enough to damage components. You should set your iron temperature based on your solder manufacturer's recommendations.</li>
+<li>Solder. We suggest using soldering with "no clean" flux. If you do use a different kind of flux, be sure to carefully clean the flux residue off based on the guidelines provided by the manufacturer of your solder. For an inexpensive option, we recommend <a href="https://www.adafruit.com/product/734">Adafruit's SAC305 solder</a>, and for a higher-quality option we recommend <a href="https://www.kester.com/products/product/275-flux-cored-wire">Kester 275 K100LD</a> (the same solder we use).</li>
+<li><a href="https://www.adafruit.com/product/149">Solder wick</a>.</li>
+<li>Flux, preferably no-clean flux, we recommend this <a href="https://www.sra-solder.com/sra-312-no-clean-flux-pen-refillable">flux pen</a>.</li>
+<li>A magnifying glass or fantastic eyesight.</li>
+</ul>
+<p>If you want to be extraordinarily well prepared:</p>
+<ul>
+<li>A <a href="https://www.adafruit.com/product/1869">hot air station</a> can be useful for undoing any soldering and is very helpful if you make a mistake like soldering a chip backwards.</li>
+<li>A microscope. This can be useful for identifying any issues with soldering. A relatively inexpensive option is <a href="https://www.amazon.com/Opti-Tekscope-Microscope-Advanced-Definition-Industrial/dp/B0184CCOY0">this one</a>.</li>
+</ul>
+<h2 id="schematic">Schematic<a class="headerlink" href="#schematic" title="Permanent link">#</a></h2>
+<p>Though it's not required, you may find it useful to refer to Helium's schematic during your build. You can find it by downloading either:</p>
+<ul>
+<li><a href="https://github.com/wntrblm/Helium/tree/main/hardware/board">The complete KiCAD project</a></li>
+<li><a href="https://github.com/wntrblm/Helium/blob/main/hardware/board/board.pdf">A ready-to-print PDF</a></li>
+</ul>
+<h2 id="pcb-faceplate">PCB &amp; faceplate<a class="headerlink" href="#pcb-faceplate" title="Permanent link">#</a></h2>
+<p>You'll need to source a printed circuit board (PCB) and faceplate for Helium. You have two options:</p>
+<ol>
+<li>You can buy them directly <a href="https://winterbloom.com/shop/helium-boards">from Winterbloom</a>. These are extremely high quality boards built to our specifications. This is an especially good option if you live in the United States.</li>
+<li>You can have them made for you by a PCB fab such as <a href="https://oshpark.com">OSHPark</a> or <a href="https://pcbway.com">PCBWay</a>. You'll generally receive multiple boards so this can be advantageous if you're planning on building several Heliums.</li>
+</ol>
+<p>If you choose to have a fab make your boards, you'll need to provide Gerber files for both the board and the faceplate.
+We highly recommend preparing these from the <a href="https://kicad.org">KiCAD</a> source files based on your fab's instructions. These can be found on GitHub:</p>
+<ul>
+<li>Board: <a href="https://github.com/wntrblm/Helium/tree/main/hardware/board">github.com/wntrblm/Helium/tree/main/hardware/board</a></li>
+<li>Faceplate: <a href="https://github.com/wntrblm/Helium/tree/main/hardware/faceplate">github.com/wntrblm/Helium/tree/main/hardware/faceplate</a></li>
+</ul>
+<p>However, you can also download pre-made Gerbers which should work for most fabs:</p>
+<ul>
+<li>Board: <a href="https://github.com/wntrblm/Helium/blob/main/hardware/board/gerbers.zip">github.com/wntrblm/Helium/blob/main/hardware/board/gerbers.zip</a></li>
+<li>Faceplate: <a href="https://github.com/wntrblm/Helium/blob/main/hardware/faceplate/gerbers.zip">github.com/wntrblm/Helium/blob/main/hardware/faceplate/gerbers.zip</a></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Faceplate differences</p>
+<p>The faceplate published on GitHub differs slightly from the faceplates sold by Winterbloom in that our logo has been removed.</p>
+</div>
+<p>We recommend giving your fab the following specifications:</p>
+<ul>
+<li>Dimensions: <code>20 x 108 mm</code> (PCB) and <code>20 x 128.5 mm</code> (Faceplate)</li>
+<li>Thickness: <code>1.6 mm</code></li>
+<li>Layers: 2</li>
+<li>Min. track width: <code>0.2mm</code> / <code>7 mil</code></li>
+<li>Min. track spacing: <code>0.2 mm</code> / <code>7 mil</code></li>
+<li>Min. drill: <code>0.4 mm</code></li>
+<li>Soldermask: Matte black</li>
+<li>Silkscreen: White</li>
+<li>Surface finish: ENIG</li>
+<li>Copper weight: <code>1 oz</code></li>
+<li>Substrate: FR4 TG 140 or better</li>
+</ul>
+<div class="admonition warning">
+<p class="admonition-title">Cheap fabs</p>
+<p>There are many options for PCB fabs these days, but keep in mind that picking the absolute cheapest option does come at the cost of quality. Use with caution! If in doubt, just grab a PCB and faceplate from us.</p>
+</div>
+<p>If you're making multiple Heliums, we'd recommend picking up a <a href="https://www.pcbway.com/pcb_prototype/SMT_stencil_and_Laser_Stencil.html">solder paste stencil</a> since it'll make assembly go a bit faster. Usually your PCB fab can provide them along with your boards.</p>
+<h2 id="bill-of-materials">Bill of materials<a class="headerlink" href="#bill-of-materials" title="Permanent link">#</a></h2>
+<p>Below is the bill of materials for Helium's electronic components, including part numbers and purchase links.</p>
+<div>
+    <table class="is-page-width is-high-density">
+        <thead>
+            <tr>
+                <th>Reference</th>
+                <th>Value &amp; Rating</th>
+                <th>Footprint</th>
+                <th align="right">Qty</th>
+                <th>Part no</th>
+                <th>Digi-Key</th>
+                <th>Mouser</th>
+                <th>LCSC</th>
+                <th align="right">Notes</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>C1, C2</td>
+                <td>10µF<br/>25V/±10%/X5R</td>
+                <td>0805</td>
+                <td align="right">2</td>
+                <td>Murata GRM21BR61E106KA73K</td>
+                <td><a href="https://www.digikey.com/en/products?keywords=490-16824-1-ND" referrerpolicy="origin" rel="external noopener" target="_blank">490-16824-1-ND</a></td>
+                <td><a href="https://www.mouser.com/c/?q=81-GRM21BR61E106KA3K" referrerpolicy="origin" rel="external noopener" target="_blank">81-GRM21BR61E106KA3K</a></td>
+                <td><a href="https://www.lcsc.com/search?q=C3909351" referrerpolicy="origin" rel="external noopener" target="_blank">C3909351</a></td>
+                <td align="right">5</td>
+            </tr>
+            <tr>
+                <td>C3-C10</td>
+                <td>100nF<br/>25V/±10%/X5R</td>
+                <td>0603</td>
+                <td align="right">8</td>
+                <td>Samsung CL10B104KB8NNNC</td>
+                <td><a href="https://www.digikey.com/en/products?keywords=1276-1000-2-ND" referrerpolicy="origin" rel="external noopener" target="_blank">1276-1000-2-ND</a></td>
+                <td><a href="https://www.mouser.com/c/?q=187-CL10B104KB8NNNC" referrerpolicy="origin" rel="external noopener" target="_blank">187-CL10B104KB8NNNC</a></td>
+                <td><a href="https://www.lcsc.com/search?q=C1591" referrerpolicy="origin" rel="external noopener" target="_blank">C1591</a></td>
+                <td align="right">5</td>
+            </tr>
+            <tr>
+                <td>C11</td>
+                <td>18pF<br/>25V/±10%/C0G</td>
+                <td>0603</td>
+                <td align="right">1</td>
+                <td>Yageo CC0603JPNPO9BN120</td>
+                <td><a href="https://www.digikey.com/en/products?keywords=13-CC0603JPNPO9BN120CT-ND" referrerpolicy="origin" rel="external noopener" target="_blank">13-CC0603JPNPO9BN120CT-ND</a></td>
+                <td><a href="https://www.mouser.com/c/?q=603-CC603JPNPO9BN120" referrerpolicy="origin" rel="external noopener" target="_blank">603-CC603JPNPO9BN120</a></td>
+                <td><a href="https://www.lcsc.com/search?q=C1853092" referrerpolicy="origin" rel="external noopener" target="_blank">C1853092</a></td>
+                <td align="right">5</td>
+            </tr>
+            <tr>
+                <td>R1-R3, R5-R7, R12-R14, R17</td>
+                <td>51Ω 100mW/±1%/Thin</td>
+                <td>0603</td>
+                <td align="right">10</td>
+                <td>Yageo RT0603FRE0751RL</td>
+                <td><a href="https://www.digikey.com/en/products?keywords=13-RT0603FRE0751RLCT-ND" referrerpolicy="origin" rel="external noopener" target="_blank">13-RT0603FRE0751RLCT-ND</a></td>
+                <td><a href="https://www.mouser.com/c/?q=603-RT0603FRE0751RL" referrerpolicy="origin" rel="external noopener" target="_blank">603-RT0603FRE0751RL</a></td>
+                <td><a href="https://www.lcsc.com/search?q=C849799" referrerpolicy="origin" rel="external noopener" target="_blank">C849799</a></td>
+                <td align="right">5</td>
+            </tr>
+            <tr>
+                <td>R4, R8, R15, R18-R20</td>
+                <td>100kΩ<br/>100mW/±0.05%/Thin</td>
+                <td>0603</td>
+                <td align="right">6</td>
+                <td>Susumu RG1608N-104-W-T1</td>
+                <td><a href="https://www.digikey.com/en/products?keywords=RG16N100KWCT-ND" referrerpolicy="origin" rel="external noopener" target="_blank">RG16N100KWCT-ND</a></td>
+                <td><a href="https://www.mouser.com/c/?q=754-RG1608N-104-W-T1" referrerpolicy="origin" rel="external noopener" target="_blank">754-RG1608N-104-W-T1</a></td>
+                <td><a href="https://www.lcsc.com/search?q=C1722256" referrerpolicy="origin" rel="external noopener" target="_blank">C1722256</a></td>
+                <td align="right">1</td>
+            </tr>
+            <tr>
+                <td>R9-R11, R16</td>
+                <td>1.5kΩ<br/>100mW/±5%/Thick</td>
+                <td>0603</td>
+                <td align="right">4</td>
+                <td>Yageo RC0603JR-071K5L</td>
+                <td><a href="https://www.digikey.com/en/products?keywords=311-1.5KGRCT-ND" referrerpolicy="origin" rel="external noopener" target="_blank">311-1.5KGRCT-ND</a></td>
+                <td><a href="https://www.mouser.com/c/?q=603-RC0603JR-071K5L" referrerpolicy="origin" rel="external noopener" target="_blank">603-RC0603JR-071K5L</a></td>
+                <td><a href="https://www.lcsc.com/search?q=C114680" referrerpolicy="origin" rel="external noopener" target="_blank">C114680</a></td>
+                <td align="right">5</td>
+            </tr>
+            <tr>
+                <td>FB1, FB2</td>
+                <td>1kΩ @ 100MHz<br/>300mA</td>
+                <td>0603</td>
+                <td align="right">2</td>
+                <td>Murata BLM18AG102SN1D</td>
+                <td><a href="https://www.digikey.com/en/products?keywords=490-1015-1-ND" referrerpolicy="origin" rel="external noopener" target="_blank">490-1015-1-ND</a></td>
+                <td><a href="https://www.mouser.com/c/?q=81-BLM11A102S" referrerpolicy="origin" rel="external noopener" target="_blank">81-BLM11A102S</a></td>
+                <td><a href="https://www.lcsc.com/search?q=C85824" referrerpolicy="origin" rel="external noopener" target="_blank">C85824</a></td>
+                <td align="right">6</td>
+            </tr>
+            <tr>
+                <td>D1, D2</td>
+                <td>Schottky<br/>30V/500mA</td>
+                <td>SOD-123</td>
+                <td align="right">2</td>
+                <td>Nexperia PMEG2005EGWX</td>
+                <td><a href="https://www.digikey.com/en/products?keywords=1727-7329-1-ND" referrerpolicy="origin" rel="external noopener" target="_blank">1727-7329-1-ND</a></td>
+                <td><a href="https://www.mouser.com/c/?q=841-PMEG2005EGWX" referrerpolicy="origin" rel="external noopener" target="_blank">841-PMEG2005EGWX</a></td>
+                <td><a href="https://www.lcsc.com/search?q=C133636" referrerpolicy="origin" rel="external noopener" target="_blank">C133636</a></td>
+                <td align="right">4</td>
+            </tr>
+            <tr>
+                <td>D3, D5, D7, D9</td>
+                <td>Positive LED<br/>Blue/3.3V/20mA</td>
+                <td>0805</td>
+                <td align="right">4</td>
+                <td>Kingbright APT2012VBC/D</td>
+                <td><a href="https://www.digikey.com/en/products?keywords=754-1794-1-ND" referrerpolicy="origin" rel="external noopener" target="_blank">754-1794-1-ND</a></td>
+                <td><a href="https://www.mouser.com/c/?q=604-APT2012VBC/D" referrerpolicy="origin" rel="external noopener" target="_blank">604-APT2012VBC/D</a></td>
+                <td><a href="https://www.lcsc.com/search?q=C5879386" referrerpolicy="origin" rel="external noopener" target="_blank">C5879386</a></td>
+                <td align="right">2</td>
+            </tr>
+            <tr>
+                <td>D4, D6, D8, D10</td>
+                <td>Positive LED<br/>Red/3.3V/20mA</td>
+                <td>0805</td>
+                <td align="right">4</td>
+                <td>Kingbright APT2012VBC/D</td>
+                <td><a href="https://www.digikey.com/en/products?keywords=754-1133-1-ND" referrerpolicy="origin" rel="external noopener" target="_blank">754-1133-1-ND</a></td>
+                <td><a href="https://www.mouser.com/c/?q=604-APT2012SURCK" referrerpolicy="origin" rel="external noopener" target="_blank">604-APT2012SURCK</a></td>
+                <td><a href="https://www.lcsc.com/search?q=C5875730" referrerpolicy="origin" rel="external noopener" target="_blank">C5875730</a></td>
+                <td align="right">2</td>
+            </tr>
+            <tr>
+                <td>U1, U2, U4, U6</td>
+                <td>OPA4991</td>
+                <td>TSSOP-14</td>
+                <td align="right">4</td>
+                <td>TI OPA4991IPWR</td>
+                <td><a href="https://www.digikey.com/en/products?keywords=296-OPA4991IPWRCT-ND" referrerpolicy="origin" rel="external noopener" target="_blank">296-OPA4991IPWRCT-ND</a></td>
+                <td><a href="https://www.mouser.com/c/?q=595-OPA4991IPWR" referrerpolicy="origin" rel="external noopener" target="_blank">595-OPA4991IPWR</a></td>
+                <td><a href="https://www.lcsc.com/search?q=C2873620" referrerpolicy="origin" rel="external noopener" target="_blank">C2873620</a></td>
+                <td align="right">2</td>
+            </tr>
+            <tr>
+                <td>J1</td>
+                <td>2x5 2.54mm<br/>IDC Header</td>
+                <td>-</td>
+                <td align="right">1</td>
+                <td>On-shore 302-S101</td>
+                <td><a href="https://www.digikey.com/en/products?keywords=ED1543-ND" referrerpolicy="origin" rel="external noopener" target="_blank">ED1543-ND</a></td>
+                <td><a href="https://www.mouser.com/c/?q=710-61201021621" referrerpolicy="origin" rel="external noopener" target="_blank">710-61201021621</a></td>
+                <td><a href="https://www.lcsc.com/search?q=C429962" referrerpolicy="origin" rel="external noopener" target="_blank">C429962</a></td>
+                <td align="right"></td>
+            </tr>
+            <tr>
+                <td>J2-J5, J7-J10, J12-J15, J17-J20</td>
+                <td>Audio jack</td>
+                <td>-</td>
+                <td align="right">16</td>
+                <td>WQP-WQP518MA</td>
+                <td colspan="3">Available from <a href="https://winterbloom.com/shop/eurorack-jacks" referrerpolicy="origin" rel="external noopener" target="_blank">Winterbloom</a> or <a href="https://www.thonk.co.uk/shop/thonkiconn/" referrerpolicy="origin" rel="external noopener" target="_blank">Thonk</a></td>
+                <td align="right"></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<p>Notes:</p>
+<ol>
+<li>If you are trying to reduce costs, you can swap the expensive <code>100kΩ 0.05%</code> resistors for much more affordable <code>0.1%</code> or <code>0.5%</code> resistors at the cost of reduced accuracy in the voltage adder circuit.</li>
+<li>You can also swap the expensive OPA4991 op-amp with a more affordable alternative, such as OPA4171, OPA1679, or OPA4197. We don't recommend going with TL074 due to it exhibiting phase reversal.</li>
+<li>The LEDs are known to work well with the faceplate's FR4 "diffusers" when using at most <code>10 mA</code>. If you use different LEDs, try to get them around <code>200 mcd @ 20 mA</code>. You can adjust their brightness &amp; current consumption by changing the <code>1.5kΩ</code> resistors.</li>
+<li>The two Schottky Barrier Diodes can generally be swapped for any <code>SOD-123</code> or <code>SOD-123F</code> Schottky with a reverse voltage V<sub>R</sub> ≥ <code>20 V</code>, a forward current of I<sub>F</sub> ≥ <code>500 mA</code>, and a forward voltage V<sub>F</sub> ≤ <code>400 mV</code>. Most other <code>PMEGxxxxEG</code> parts work well.</li>
+<li>Passive components such as resistors and capacitors often fluctuate in stock. They can be substituted with equivalent parts as specified by their <strong>rating</strong>. For capacitors, the rating is <code>Voltage/Tolerance/Dielectric</code>, for example <code>24V/±10%/C0G</code>. For resistors, the rating is <code>Power/Tolerance/Composition</code>, for example <code>100mW/±1%/Thin</code>. If part of the rating is left off, then it doesn't matter.</li>
+<li>The ferrite beads can be swapped with similar <code>0603</code> ferrites with a DC current rating of ≥ <code>300 mA</code>. The ones we use have an impedance of <code>1 kΩ @ 100 MHz</code>.</li>
+</ol>
+<h2 id="component-orientation">Component orientation<a class="headerlink" href="#component-orientation" title="Permanent link">#</a></h2>
+<p>Before you start placing components, take a chance to note the correct orientation for components such as diodes, LEDs, large capacitors, and ICs.</p>
+<p>For LEDs and diodes, the PCB and the components have corresponding cathode marks on one side. LEDs typically have a green marks on the top and a green triangle on the bottom, whereas diodes have a lighter stripe drawn across one side.</p>
+<div class="columns">
+    <div class="column">
+        <img src="/images/led.jpg" alt="A photo showing the proper alignment of LEDs">
+    </div>
+    <div class="column">
+        <img src="/images/diode.jpg" alt="A photo showing the proper alignment of diodes">
+    </div>
+</div>
+
+<p>Use additional caution soldering LEDs, as overheating them or melting their lens can destroy them.</p>
+<p>Integrated circuits (ICs) also must be installed in the correct orentation. Most larger ICs have a circle in one corner that designates pin <code>1</code>. This should be matched with corresponding black circle or star on the board. The assembly diagrams <a href="#assembly">below</a> also highlight pin <code>1</code> in <strong style="color:green;">green</strong>.</p>
+<p><img alt="IC alignment" src="../images/ic.jpg" style="max-width: 50%; margin-left: auto; margin-right: auto; display: block;" /></p>
+<p>If in doubt, double check the chip's datasheet.</p>
+<h2 id="assembly">Assembly<a class="headerlink" href="#assembly" title="Permanent link">#</a></h2>
+<p>Helium has components on both sides of its board. We recommend starting with the back and then doing the front, since the majority of components are on the back. This is especially true if you're using a stencil and solder paste instead of an iron, as you'll want to be able to reflow the boards before placing the LEDs on the front side. We recommend that you start with the largest components first and work your way down to the small passives.</p>
+<p>The interactive tables and images below show where to place each component.</p>
+<ul>
+<li>Components are grouped by value so that you can work with one strip of components at a time.</li>
+<li><strong>Click</strong> on a row to highlight components on the PCB image.</li>
+<li>Use the checkboxes to keep track of which components you've finished.</li>
+</ul>
+<p><winter-pcb-assembly src="/pcb-data.json" rotate></winter-pcb-assembly></p>
+<h2 id="inspection-cleaning">Inspection &amp; cleaning<a class="headerlink" href="#inspection-cleaning" title="Permanent link">#</a></h2>
+<p>Before moving on, take a moment to carefully inspect the PCB. Keep an eye out for:</p>
+<ul>
+<li>Missing components</li>
+<li><a href="#polarized-components">Component orientation</a></li>
+<li><a href="https://www.protoexpress.com/blog/ipc-j-std-001-standard-soldering-requirements/">Poor solder joints</a></li>
+<li><a href="https://electronics.stackexchange.com/questions/318164/how-do-i-prevent-bridges-while-soldering-smd-components">Solder bridges</a> between adjacent pins on ICs and between passives and nearby through holes</li>
+<li>The LEDs on the front side, since they will be very difficult to access once you add the jacks.</li>
+</ul>
+<p>This is also a good chance to clean your board. We highly suggest following the instructions for your solder and flux. If in doubt, isopropyl alcohol and a cotton swab can be used to remove flux residue but look out for no-clean flux as it can turn sticky if not completely removed when exposed to alcohol.</p>
+<h2 id="next-steps">Next steps<a class="headerlink" href="#next-steps" title="Permanent link">#</a></h2>
+<p>Congratulations, you have completed the hardest part! All that remains is assembling the through-hole components and putting on the faceplate. You can follow the <a href="../kit-build/">kit build guide</a> to finish up.</p>
+<h2 id="support-us">Support us<a class="headerlink" href="#support-us" title="Permanent link">#</a></h2>
+<p>We made everything open source and put together this guide because we want you to be able to build, repair, and truly own your Helium. We don't expect anything in return, but if you'd like to show us some support feel free to:</p>
+<ul>
+<li>Give us a shoutout when you show off your work! We're on <a href="https://twitter.com/wntrblm">Twitter</a> and <a href="https://instagram.com/wntrblm">Instagram</a>.</li>
+<li>Order something cute &amp; soft from our <a href="https://winterbloom.threadless.com/">Threadless shop</a>.</li>
+<li>Drop us a one-time tip through <a href="https://ko-fi.com/theacodes">Ko-fi</a> or <a href="https://github.com/sponsors/theacodes">GitHub Sponsors</a>.</li>
+</ul></article>
+</main><footer>
+        <ul>
+          <li>
+            © 2024
+            Winterbloom · Alethea Flowers
+          </li>
+          <li>
+            Published under
+            <a
+              href="https://github.com/wntrblm/Helium/blob/main/docs/LICENSE">
+              CC BY-SA 4.0
+            </a>
+          </li>
+        </ul>
+        <ul>
+          <li class="updated">
+            Last updated on 2024/2/23
+          </li>
+          <li>
+            <a href="https://github.com/wntrblm/Helium/edit/main/user_guide/docs/self-source-build.md">Edit this page on GitHub</a>
+          </li>
+          <li>
+            <a href="mailto:support@winterbloom.com">
+              Send us a message
+            </a>
+          </li>
+        </ul>
+      </footer>
+      <script type="module" src="../winter.js"></script>
+      
+    
+  </body>
+</html>
