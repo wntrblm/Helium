@@ -22,7 +22,6 @@ Before you begin, make sure that you've got:
 -   Proper ventilation, like this [small filtered fan](https://a.co/d/eUfPCRO).
 -   A **temperature-controlled** soldering iron, like this [Hakko] or the [Pinecil]. It is very important to use a temperature-controlled iron, since unregulated irons can easily get hot enough to damage components. You should set your iron temperature based on your solder manufacturer's recommendations.
 -   Solder. We recommend [Adafruit's SAC305 solder][adafruit solder] or [Kester 275 K100LD].
--   A small flat head screwdriver, like [this one][small screwdriver].
 
 !!! question "Flux"
     We suggest using solder with "no clean" flux. If you use a different kind of flux, be sure to carefully clean the flux residue off based on the guidelines provided by the manufacturer of your solder. Take special care with the LEDs and potentiometers, as they can be damaged by water and flux cleaners.
@@ -34,7 +33,6 @@ Before you begin, make sure that you've got:
 [adafruit solder]: https://www.adafruit.com/product/734
 [Kester 275 K100LD]: https://www.kester.com/products/product/275-flux-cored-wire
 [flux pen]: https://www.sra-solder.com/sra-312-no-clean-flux-pen-refillable
-[small screwdriver]: https://lovemyswitches.com/2mm-flat-head-screwdriver-for-knob-set-screws/
 
 
 ## Kit contents
