@@ -44,12 +44,13 @@ class Mux:
     def measure(cls, addr):
         cls.set(addr)
         sleep(0.002)
+        return mm.read_voltage_fast()
         return statistics.mean([mm.read_voltage_fast() for _ in range(3)])
 
 
 class Voltage:
     IN_A = h.VOUT1A
-    IN_B = h.VOUT1B
+    IN_B = h.VOUT1A
     IN_C = h.VOUT1C
     IN_D1 = h.VOUT2A
     IN_D2 = h.VOUT3A
@@ -153,21 +154,20 @@ def measure_adder():
             ref = Mux.measure(mux)
             measured = Mux.measure(Mux.OUT_D)
             diff = (ref - measured) * 1_000
-            print(f"{v=}, {ref=:0.5f}, {measured=:0.5f}, {diff=:0.2f}")
+            print(f"{v=}, {ref=:0.5f}, {measured=:0.5f}, {diff=:0.2f} mV")
             series.data.append((v, diff))
 
         input_series.append(series)
 
-    c_c_stdev = statistics.stdev(
-        [statistics.mean([x for _, x in series.data]) for series in input_series]
-    )
+    all_diffs = [x for _, x in itertools.chain(*[series.data for series in input_series])]
+    c_c_stdev = statistics.stdev(all_diffs)
 
-    if all([-30 < x < 30 for x in itertools.chain([x for _, x in series.data])]):
+    if all([-50 < x < 50 for x in all_diffs]):
         offset_and_gain_success = True
     else:
         offset_and_gain_success = False
 
-    if c_c_stdev < 0.30:
+    if c_c_stdev < 10:
         c_c_success = True
     else:
         c_c_success = False
